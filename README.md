@@ -1,8 +1,8 @@
-# Yevgeniy Brikman Home Page
+# Alex Stouffer Home Page
 
-This is the code for the [Yevgeniy Brikman Home Page](https://www.ybrikman.com).
+This is the code for the [Alex Stouffer Home Page](https://www.ybrikman.com).
 
-![Yevgeniy Brikman Home Page Screenshot](/assets/img/screenshots/ybrikman-homepage-screenshot.png)
+![Alex Stouffer Home Page Screenshot](/assets/img/screenshots/ybrikman-homepage-screenshot.png)
 
 I wanted a clean, simple home page where I could put my writing, speaking,
 projects, and photos. It had to be fast, mobile-friendly, free to build, and

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yevgeniy Brikman on the Yours Productly Podcast"
+title: "Alex Stouffer on the Yours Productly Podcast"
 tags:
 - External Writing
 - Startups

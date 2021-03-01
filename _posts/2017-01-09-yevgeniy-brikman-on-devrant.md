@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yevgeniy Brikman on the devRant Podcast"
+title: "Alex Stouffer on the devRant Podcast"
 tags:
 - External Writing
 - Startups
