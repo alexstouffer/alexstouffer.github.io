@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+gem 'rexml', '3.2.4'
+gem 'tzinfo', '2.0.4'
+gem 'tzinfo-data', '1.2021.1'
 gem 'jekyll', '3.5.2'
 group :jekyll_plugins do
   gem 'jekyll-redirect-from', '0.12.1'
