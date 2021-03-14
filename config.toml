@@ -5,7 +5,9 @@ title = "Stoubord Labs"
 # Novela settings
 theme = "github.com/forestryio/hugo-theme-novela"
 
+DefaultContentLanguage = "en"
 paginate = 6
+publishDir = "docs"
 
 [social]
 github= "https://github.com/forestryio/novela-hugo-starter"
