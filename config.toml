@@ -1,0 +1,17 @@
+baseURL = "https://alexstouffer.github.io/"
+languageCode = "en-us"
+title = "Stoubord Labs"
+
+# Novela settings
+theme = "github.com/forestryio/hugo-theme-novela"
+
+paginate = 6
+
+[social]
+github= "https://github.com/forestryio/novela-hugo-starter"
+linkedin= "https://www.linkedin.com/company/forestry.io"
+dribbble = "#"
+youtube = "#"
+
+[taxonomies]
+author = "Alex Stouffer"

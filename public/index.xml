@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stoubord Labs</title>
+    <link>https://alexstouffer.github.io/</link>
+    <description>Recent content on Stoubord Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2021 19:14:07 -0800</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Is Easier Than Jekyll For Windows Users</title>
+      <link>https://alexstouffer.github.io/post/first-post/</link>
+      <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/post/first-post/</guid>
+      <description>I spent a week working to implement a Jekyll github pages, but the configuration constantly ran into new errors. I decided to try an alternative after spending a couple days (too long) trying to solve for one error that kept me from developing locally. Luckily Hugo paid off after only a couple hours of tinkering.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://alexstouffer.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexstouffer.github.io/about/</guid>
+      <description>My name is Alex Stouffer and I&amp;rsquo;m a web developer invested in the future of decentralized internet. My goal in 2021 is to begin working on blockchain projects both personal and professional. I love playing music and reading to my infant daughter Lucia.</description>
+    </item>
+    
+  </channel>
+</rss>
