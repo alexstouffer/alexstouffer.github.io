@@ -1,7 +1,7 @@
 ---
-title: "2nd Post"
+title: "A Roadmap To Selling Student-Tailored Video Courses"
 date: 2021-03-14T20:36:32-07:00
-hero: ../../images/Lightbulb.jpg
+hero: ../../images/road.jpg
 draft: false
 authors:
     - Alex Stouffer

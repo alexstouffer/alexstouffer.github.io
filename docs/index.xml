@@ -6,9 +6,18 @@
     <description>Recent content on Stoubord Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 20:36:32 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 00:38:50 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2nd Post</title>
+      <title>Non-Fungible Tokens (NFTs) and the Crypto-Future of the Music Industry</title>
+      <link>https://alexstouffer.github.io/post/nft-music-future/</link>
+      <pubDate>Tue, 16 Mar 2021 00:38:50 -0700</pubDate>
+      
+      <guid>https://alexstouffer.github.io/post/nft-music-future/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Roadmap To Selling Student-Tailored Video Courses</title>
       <link>https://alexstouffer.github.io/post/2nd-post/</link>
       <pubDate>Sun, 14 Mar 2021 20:36:32 -0700</pubDate>
       
@@ -17,11 +26,11 @@
     </item>
     
     <item>
-      <title>Hugo Is Easier Than Jekyll For Windows Users</title>
-      <link>https://alexstouffer.github.io/post/first-post/</link>
+      <title>The Do&#39;s and Dont&#39;s of Cleaning Musical Instruments</title>
+      <link>https://alexstouffer.github.io/post/cleaning-dos-donts/</link>
       <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
       
-      <guid>https://alexstouffer.github.io/post/first-post/</guid>
+      <guid>https://alexstouffer.github.io/post/cleaning-dos-donts/</guid>
       <description>I spent a week working to implement a Jekyll github pages, but the configuration constantly ran into new errors. I decided to try an alternative after spending a couple days (too long) trying to solve for one error that kept me from developing locally. Luckily Hugo paid off after only a couple hours of tinkering.</description>
     </item>
     

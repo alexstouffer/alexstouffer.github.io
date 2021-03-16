@@ -5,6 +5,16 @@
     <link>https://alexstouffer.github.io/authors/</link>
     <description>Recent content in Authors on Stoubord Labs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://alexstouffer.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Mar 2021 00:38:50 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alex Stouffer</title>
+      <link>https://alexstouffer.github.io/authors/alex-stouffer/</link>
+      <pubDate>Tue, 16 Mar 2021 00:38:50 -0700</pubDate>
+      
+      <guid>https://alexstouffer.github.io/authors/alex-stouffer/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

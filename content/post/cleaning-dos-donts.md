@@ -1,7 +1,7 @@
 ---
-title: "Hugo Is Easier Than Jekyll For Windows Users"
+title: "The Do's and Dont's of Cleaning Musical Instruments"
 date: 2021-03-07T19:14:07-08:00
-hero: ../../images/Lightbulb.jpg
+hero: ../../images/guitarfocus.jpg
 draft: false
 authors:
     - Alex Stouffer
