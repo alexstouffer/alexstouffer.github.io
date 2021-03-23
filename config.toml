@@ -10,10 +10,10 @@ paginate = 6
 publishDir = "docs"
 
 [social]
-github= "https://github.com/forestryio/novela-hugo-starter"
-linkedin= "https://www.linkedin.com/company/forestry.io"
+github= "https://github.com/alexstouffer"
+linkedin= "https://www.linkedin.com/in/alex-stouffer-ab747131/"
 dribbble = "#"
-youtube = "#"
+youtube = "https://www.youtube.com/user/Fictionshow/videos"
 
 [taxonomies]
 author = "authors"
