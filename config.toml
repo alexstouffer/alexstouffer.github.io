@@ -5,6 +5,9 @@ title = "Stoubord Labs"
 # Novela settings
 theme = "github.com/forestryio/hugo-theme-novela"
 
+# Internal Nav
+sectionPagesMenu = "mainmenu"
+
 DefaultContentLanguage = "en"
 paginate = 6
 publishDir = "docs"
@@ -12,7 +15,7 @@ publishDir = "docs"
 [social]
 github= "https://github.com/alexstouffer"
 linkedin= "https://www.linkedin.com/in/alex-stouffer-ab747131/"
-dribbble = "#"
+# dribbble = "#"
 youtube = "https://www.youtube.com/user/Fictionshow/videos"
 
 [taxonomies]
