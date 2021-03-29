@@ -15,7 +15,7 @@
     {{ $articles := partialCached "func/GetArticles" . "articles" }}
 */}}
 {{ $articles := slice }}
-{{ with where site.RegularPages "Type" "post" }}
+{{ with where site.RegularPages "Type" .Type }}
   {{ $articles = . }}
 {{ end }}
 {{ return $articles }}
