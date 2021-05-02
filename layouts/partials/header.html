@@ -4,13 +4,15 @@
         {{ partial "icons/ui/logo.html" . }}
         <span class="header-hidden">Navigate back to the homepage</span>
       </a>
-      <nav class="header-menu">{{ partial "nav.html" . }}</nav>
-      <div class="nav-controls">
-        <button id="themeColorButton" class="icon-wrapper"> 
-          <div id="sunRays" class="sun-rays"></div>
-          <div id="moonOrSun" class="moon-or-sun"></div>
-          <div id="moonMask" class="moon-mask"></div>
-        </button>
+      <div class="menu-container">
+        <nav class="header-menu">{{ partial "nav.html" . }}</nav>
+        <div class="nav-controls">
+          <button id="themeColorButton" class="icon-wrapper"> 
+            <div id="sunRays" class="sun-rays"></div>
+            <div id="moonOrSun" class="moon-or-sun"></div>
+            <div id="moonMask" class="moon-mask"></div>
+          </button>
+        </div>
       </div>
     </div>
   </Section>

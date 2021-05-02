@@ -119,6 +119,26 @@
             justify-content: space-between;
 }
 
+nav li {
+    display: inline;
+    padding: 10px;
+    align-items: center;
+}
+
+.header-menu {
+    padding-top: 25px;
+    margin-right: 0%;
+    float: left;
+}
+
+.header-menu a {
+    color: #73737D;
+}
+
+.header-menu a:hover {
+    color: orangered;
+}
+
 @media screen and (max-height: 800px) {
     .nav-container{
         padding-top: 50px;
@@ -179,6 +199,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 40px;
 }
 
 /*PHABLET*/

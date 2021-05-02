@@ -63,19 +63,6 @@ ul li > *{
     display: inline;
 }
 
-ul li::before{
-    width: 3rem;
-    display: inline-block;
-    position: absolute;
-    color: var(--articleText);
-    content: "";
-    position: absolute;
-    left: -30px;
-    top: 8px;
-    height: 8px;
-    width: 8px;
-    background: var(--articleText);
-}
 
 /*TABLET*/
 @media screen and (max-width: 735px){
