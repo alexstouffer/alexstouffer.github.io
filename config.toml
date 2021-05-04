@@ -20,3 +20,5 @@ youtube = "https://www.youtube.com/user/Fictionshow/videos"
 
 [taxonomies]
 author = "authors"
+tag = "tags"
+category = "categories"
