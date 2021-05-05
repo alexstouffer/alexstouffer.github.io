@@ -1,43 +1,35 @@
 <section class="section narrow">
   <section class="section nartrow ">
     <div id="articlesList" class="articles-list-container show-details">
-      <div class="post-row">
-      {{ $biggerFirst := true }}
-      {{ $biggerPlaced := false }}
-      {{ $counter := 0}}
       {{ $author := site.GetPage "authors/alex-stouffer" }}
-      {{ range first 2 $author.Pages }}
-        <a href="{{ .RelPermalink }}" class="article-link"
-        {{ if and (eq ($biggerFirst) true) (eq ($biggerPlaced) false) }}
-              {{ if eq $counter 0 }}
-                id="article-link-bigger"
-                {{ $biggerPlaced = true }}
-              {{ end }}
-            {{ else if and (not $biggerFirst) (not $biggerPlaced) }}
-              {{ if ne $counter 0 }}
-                id="article-link-bigger"
-                {{ $biggerPlaced = true }}
-              {{ end }}
-            {{ end }}>
-          <div class="article-data-outer">
-            <div class="image-container">
-              <img src="{{ .Params.hero }}" class="article-image" />
-            </div>
-            <div class="article-data">
-              <h2 class="article-title">
-                {{ .Params.title }}
-              </h2>
-              <p class="article-excerpt">
-                {{ .Params.excerpt }}
-              </p>
-              <div class="article-metadata">
-                {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read
+      {{ range $index, $element := $author.Pages }}
+        {{ if(modBool $index 2) }}
+          <div class="post-row">
+        {{end}}
+          <a href="{{ .RelPermalink }}" class="article-link">
+            <div class="article-data-outer">
+              <div class="image-container">
+                <img src="{{ .Params.hero }}" class="article-image" />
+              </div>
+              <div class="article-data">
+                <h2 class="article-title">
+                  {{ .Params.title }}
+                </h2>
+                <p class="article-excerpt">
+                  {{ .Params.excerpt }}
+                </p>
+                <div class="article-metadata">
+                  {{ .Date.Format "January 2, 2006" }} • {{ .ReadingTime }} min read
+                </div>
               </div>
             </div>
+          </a>
+          <a href="{{ .RelPermalink }}" style="opacity: 0;" class="article-link">
+          </a>
+        {{ if not (modBool $index 2) }}
           </div>
-        </a>
-        {{ end }}
-      </div>
+        {{end}}
+      {{ end }}
     </div>
   </section>
 </section>
