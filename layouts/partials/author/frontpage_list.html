@@ -5,7 +5,7 @@
       {{ $author := site.GetPage "authors/alex-stouffer" }}
       {{ $biggerFirst := true }}
       {{ $biggerPlaced := false }}
-      {{ range $index, $element := $author.Pages }}
+      {{ range $index, $element := sort $author.Pages.ByDate.Reverse }}
         {{ $counter := mod $index 2 }}
         {{ if not $counter }}
           <div class="post-row">
