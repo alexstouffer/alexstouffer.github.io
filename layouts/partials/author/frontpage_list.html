@@ -2,11 +2,25 @@
   <section class="section nartrow ">
     <div id="articlesList" class="articles-list-container show-details">
       {{ $author := site.GetPage "authors/alex-stouffer" }}
+      {{ $biggerFirst := true }}
+      {{ $biggerPlaced := false }}
       {{ range $index, $element := $author.Pages }}
-        {{ if(modBool $index 2) }}
+        {{ $counter := mod $index 2 }}
+        {{ if not $counter }}
           <div class="post-row">
         {{end}}
-          <a href="{{ .RelPermalink }}" class="article-link">
+          <a href="{{ .RelPermalink }}" class="article-link"            
+          {{ if and (eq ($biggerFirst) true) (eq ($biggerPlaced) false) }}
+          {{ if eq $counter 0 }}
+            id="article-link-bigger"
+            {{ $biggerPlaced = true }}
+          {{ end }}
+          {{ else if and (not $biggerFirst) (not $biggerPlaced) }}
+            {{ if ne $counter 0 }}
+              id="article-link-bigger"
+              {{ $biggerPlaced = true }}
+            {{ end }}
+          {{ end }}>
             <div class="article-data-outer">
               <div class="image-container">
                 <img src="{{ .Params.hero }}" class="article-image" />
@@ -24,12 +38,18 @@
               </div>
             </div>
           </a>
-          <a href="{{ .RelPermalink }}" style="opacity: 0;" class="article-link">
-          </a>
-        {{ if not (modBool $index 2) }}
+        {{ $counter := mod (add $index 1) 2 }}
+        {{ $len := (where .Pages "Type" "posts") }}
+        {{ if or (eq $counter 0) (eq (add $index 1) $len) }}
           </div>
-        {{end}}
-      {{ end }}
+            {{ $biggerPlaced = false }}
+            {{ if $biggerFirst }}
+              {{ $biggerFirst = false }}
+            {{ else }}
+              {{ $biggerFirst = true }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
     </div>
   </section>
 </section>
