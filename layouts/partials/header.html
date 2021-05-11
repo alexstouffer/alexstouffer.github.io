@@ -5,7 +5,21 @@
       <span class="header-hidden">Navigate back to the homepage</span>
     </a>
     <div class="menu-container">
-      <nav class="header-menu">{{ partial "main-menu.html" . }}</nav>
+      <nav class="header-menu">
+        <!-- Force Context main-menu.html -->
+        <nav id="hamnav">
+          <!-- [THE HAMBURGER] -->
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger"/>
+         
+          <!-- [MENU ITEMS] -->
+          <ul id="hamitems-mobile">
+              {{ range .Site.Menus.mainmenu }}
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+          </ul>
+        </nav>
+      </nav>
       <div class="nav-controls">
         <button id="themeColorButton" class="icon-wrapper"> 
           <div id="sunRays" class="sun-rays"></div>
@@ -18,13 +32,14 @@
 </Section>
 
 <Section class="section">
-  <!-- <nav id="hamnav">
-    <ul id="hamitems-mobile">
-      {{ range .Site.Menus.mainmenu }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-  </nav> -->
+      <!-- Force Context mobile-menu.html -->
+    <nav id="hamnav">
+      <ul id="hamitems">
+        {{ range .Site.Menus.mainmenu }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
 </Section>
   
   {{ $script := resources.Get "js/toggleLogos.js" }}
