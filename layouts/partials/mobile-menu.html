@@ -1,0 +1,7 @@
+<nav id="hamnav">
+    <ul id="hamitems-mobile">
+      {{ range .Site.Menus.mainmenu }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+</nav>
