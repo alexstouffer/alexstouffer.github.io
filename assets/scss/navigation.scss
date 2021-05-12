@@ -148,15 +148,18 @@ nav li {
 #hamnav {
     width: 100%;
     /* Optional */
-    position: sticky;
-    top: 0;
+  }
+
+  .brand-info {
+    width: 90%;
+    padding-left: 7%;
   }
   
   /* Hide Hamburger */
   #hamnav label, #hamburger { display: none; }
   
   /* Horizontal Menu Items */
-  #hamitems { display: flex; }
+  #hamitems { display: none; }
   #hamitems-mobile { display: flex; }
   #hamitems a {
     width: 20%; /* 100% / 5 tabs = 20% */
@@ -173,9 +176,25 @@ nav li {
     text-decoration: none;
     text-align: center;
   }
+
+
   
   /* [ON SMALL SCREENS] */
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 860px){
+    .nav-container {
+        width: 98%;
+        padding-bottom: 80px;  
+    }
+
+    .main-menu { display: none }
+
+    .brand-info {
+    }
+    
+    #hamnav {
+        margin-top: -15rem;
+    }
+
     /* Show Hamburger Icon */
     #hamnav label { 
       display: inline-block; 
@@ -184,6 +203,16 @@ nav li {
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
+      z-index: 20;
+      padding-left: 30px;
+      padding-right: 7%;
+      float: right;
+    }
+
+    .menu-toggle {
+        position: static;
+        // top: -28%; 
+        left: 82.5%;
     }
   
     /* Break down menu items into vertical */
@@ -191,21 +220,21 @@ nav li {
       box-sizing: border-box;
       display: block;
       width: 100%;
-      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
     }
 
-    #hamitems-mobile a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-    }
+    // #hamitems-mobile a {
+    //     box-sizing: border-box;
+    //     display: block;
+    //     width: 100%;
+    //     border-top: 1px solid #333;
+    // }
   
     /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
-    #hamitems-mobile { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-    #hamnav input:checked ~ #hamitems-mobile { display: block; }
+    // #hamitems-mobile { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; padding-top: 10%; }
+    // #hamnav input:checked ~ #hamitems-mobile { display: block; }
 
   }
 
