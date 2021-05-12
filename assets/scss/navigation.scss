@@ -143,6 +143,103 @@ nav li {
     color: orangered;
 }
 
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#hamnav {
+    width: 100%;
+    /* Optional */
+  }
+
+  .brand-info {
+    width: 90%;
+    padding-left: 7%;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* Horizontal Menu Items */
+  #hamitems { display: none; }
+  #hamitems-mobile { display: flex; }
+  #hamitems a {
+    width: 20%; /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  #hamitems-mobile a {
+    width: 20%; /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 860px){
+    .nav-container {
+        width: 98%;
+        padding-bottom: 80px;  
+    }
+
+    .main-menu { display: none }
+
+    .brand-info {
+        height: 15rem;
+    }
+    
+    .menu-toggle {
+        margin-top: -15rem;
+    }
+
+    /* Show Hamburger Icon */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a0262000;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+      z-index: 20;
+      margin-top: -7rem;
+      padding-left: 30px;
+      padding-right: 7%;
+      float: right;
+    }
+
+    .menu-toggle {
+        position: static;
+        // top: -28%; 
+        left: 82.5%;
+    }
+  
+    /* Break down menu items into vertical */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #333;
+    }
+
+    // #hamitems-mobile a {
+    //     box-sizing: border-box;
+    //     display: block;
+    //     width: 100%;
+    //     border-top: 1px solid #333;
+    // }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    // #hamitems-mobile { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -15rem;}
+    // #hamnav input:checked ~ #hamitems-mobile { display: block; }
+
+  }
+
 @media screen and (max-height: 800px) {
     .nav-container{
         padding-top: 50px;

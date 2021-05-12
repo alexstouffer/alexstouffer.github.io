@@ -1,0 +1,13 @@
+<nav id="hamnav">
+    <!-- [THE HAMBURGER] -->
+        <label for="hamburger" class="menu-toggle">&#9776;</label>
+        <input type="checkbox" id="hamburger" class="menu-toggle"/>
+   
+    <!-- [MENU ITEMS] -->
+    <ul id="hamitems">
+        {{ range .Site.Menus.mainmenu }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>    
+
