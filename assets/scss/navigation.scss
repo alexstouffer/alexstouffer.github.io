@@ -183,7 +183,8 @@ nav li {
   @media screen and (max-width: 860px){
     .nav-container {
         width: 95%;
-        padding-bottom: 80px;  
+        padding-bottom: 80px; 
+        z-index: 5; 
     }
 
     .main-menu { display: none }
@@ -235,7 +236,7 @@ nav li {
     /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
     // #hamitems-mobile { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -15rem;}
+    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -15rem; z-index: 20; }
     // #hamnav input:checked ~ #hamitems-mobile { display: block; }
 
   }
