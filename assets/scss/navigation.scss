@@ -189,9 +189,10 @@ nav li {
     .main-menu { display: none }
 
     .brand-info {
+        height: 15rem;
     }
     
-    #hamnav {
+    .menu-toggle {
         margin-top: -15rem;
     }
 
@@ -204,6 +205,7 @@ nav li {
       font-size: 1.2em;
       padding: 10px;
       z-index: 20;
+      margin-top: -7rem;
       padding-left: 30px;
       padding-right: 7%;
       float: right;
@@ -233,7 +235,7 @@ nav li {
     /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
     // #hamitems-mobile { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; padding-top: 10%; }
+    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -15rem;}
     // #hamnav input:checked ~ #hamitems-mobile { display: block; }
 
   }
