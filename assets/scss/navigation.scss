@@ -153,13 +153,13 @@ nav li {
   .brand-info {
     width: 90%;
     padding-left: 7%;
-  }
-
-  @media screen and (max-width: $phablet){
-    .brand-info {
+    height: 15rem;
+    @media screen and (max-width: $phablet){
+        padding-left: 0;
         margin-top: -10%;
     }
-  }   
+  }
+
   
   /* Hide Hamburger */
   #hamnav label, #hamburger { display: none; }
@@ -192,16 +192,12 @@ nav li {
   /* [ON SMALL SCREENS] */
   @media screen and (max-width: 860px){
     .nav-container {
-        width: 95%;
+        width: 92%;
         padding-bottom: 80px; 
         z-index: 5; 
     }
 
     .main-menu { display: none }
-
-    .brand-info {
-        height: 15rem;
-    }
     
     .menu-toggle {
         margin-top: -15rem;
