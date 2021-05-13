@@ -154,6 +154,12 @@ nav li {
     width: 90%;
     padding-left: 7%;
   }
+
+  @media screen and (max-width: $phablet){
+    .brand-info {
+        margin-top: -10%;
+    }
+  }   
   
   /* Hide Hamburger */
   #hamnav label, #hamburger { display: none; }

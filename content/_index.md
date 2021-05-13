@@ -1,4 +1,5 @@
 ---
 hero:
-  heading: Put private music lessons 'on wax' so students can relearn them on-demand
+  heading: I help artisan entreprenuers with digital marketing and operational automation.
+  sub-heading: Leverage your trade with a free consultation.
 ---

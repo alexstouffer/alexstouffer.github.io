@@ -65,8 +65,8 @@
     }
 
     @media screen and (max-width: $phablet){
-        margin: 170px auto 180px;
-        padding: 0 40px;
+        margin: 0 auto 30px;
+        padding: 0 0;
     }
   
     @media screen and (max-height: 700px) {
@@ -453,6 +453,13 @@
 .post-content{
     padding: 80px 0 35px;
 }
+
+@media screen and (max-width: $phablet){
+    .post-content {
+        padding: 30px 0 0 0;
+    }
+}
+
 
 /**************************************ARTICLE NEXT**************************************/
 
