@@ -1,6 +1,6 @@
 baseURL = "https://alexstouffer.github.io/"
 languageCode = "en-us"
-title = "Stoubord Labs"
+title = "Alex Stouffer-DeBord"
 
 # Novela settings
 theme = "hugo-theme-novela-master"
