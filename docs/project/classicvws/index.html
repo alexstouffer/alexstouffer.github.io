@@ -25,10 +25,10 @@
 
 
 <title>Classic VW Restorations | Alex Stouffer-DeBord</title>
-<meta name="description" content="This project is currently being launched on AWS and will be updated shortly">
+<meta name="description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
 <meta property="og:title" content="Classic VW Restorations | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="This project is currently being launched on AWS and will be updated shortly">
+<meta property="og:description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
 <meta property="og:url" content="https://alexstouffer.github.io/project/classicvws/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
@@ -38,7 +38,7 @@
 	<link rel="canonical" href="https://alexstouffer.github.io/project/classicvws/">
 
 
-	<meta name="twitter:description" content="This project is currently being launched on AWS and will be updated shortly">
+	<meta name="twitter:description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
 <meta name="twitter:image" content="https://alexstouffer.github.io/images/ClassicVWs.JPG">
 <meta property="article:published_time" content="2021-04-15T19:14:07-08:00">
 	<meta property="article:updated_time" content="2021-04-15T19:14:07-08:00">
@@ -147,7 +147,27 @@
 </section>
 
     <article  id="articleContent" class="post-content">
-        <p>This project is currently being launched on AWS and will be updated shortly</p>
+        <h2 id="overview">Overview</h2>
+<ul>
+<li>Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA.</li>
+<li>classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro.</li>
+<li>Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI</li>
+<li>Toolset emphasizes design over development</li>
+</ul>
+<h2 id="migration">Migration</h2>
+<ul>
+<li>(Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP.</li>
+<li>Live database overwritten by exporting localhost.sql database from phpmyadmin and importing it to the EC2 instance via SSH and SCP commands</li>
+<li>WP-Contents folder cleared on server using <code>sudo rm -r path/to/wp-contents/*</code> so that the git repo may be cloned into wp-contents without error (directory must be empty).
+<ul>
+<li>Use <code>sudo apt-get install git</code> to install git</li>
+<li>Use <code>git clone path/to/repo.git .</code> to clone the contents of the repo into the working directory without including the parent project folder.</li>
+</ul>
+</li>
+</ul>
+<h2 id="issues">Issues</h2>
+<h3 id="version-control">Version Control</h3>
+<p>Using git as a hub, all of the of the changes were intended to be pushed from a local development and pulled from our EC2 instance. That seemed to not be the case though as changes that were deleted from templates in the localhost showed up on the live server, no matter how many times the git repo was updated. I was able to fix this issue by updating Elementor&rsquo;s CSS Print Method on the production server under: Admin Panel-&gt;Elementor-&gt;Settings-&gt;Advanced. In hindsight, if I were to change this setting in the localhost instance it may make the necassary changes in the git repo.</p>
 
     </article>
     

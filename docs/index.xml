@@ -13,7 +13,7 @@
       <pubDate>Thu, 15 Apr 2021 19:14:07 -0800</pubDate>
       
       <guid>https://alexstouffer.github.io/project/classicvws/</guid>
-      <description>This project is currently being launched on AWS and will be updated shortly</description>
+      <description>Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&amp;rsquo;s public IP. Live database overwritten by exporting localhost.</description>
     </item>
     
     <item>
