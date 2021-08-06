@@ -25,10 +25,12 @@
 
 
 <title>Classic VW Restorations | Alex Stouffer-DeBord</title>
-<meta name="description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
+<meta name="description" content="Project Overview This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
+Development  Created a custom post type for projects as a plugin using a GenerateWP template. Activated Elementor license and updated stock templates for archive lists and single pages.">
 <meta property="og:title" content="Classic VW Restorations | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
+<meta property="og:description" content="Project Overview This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
+Development  Created a custom post type for projects as a plugin using a GenerateWP template. Activated Elementor license and updated stock templates for archive lists and single pages.">
 <meta property="og:url" content="https://alexstouffer.github.io/project/classicvws/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
@@ -38,7 +40,8 @@
 	<link rel="canonical" href="https://alexstouffer.github.io/project/classicvws/">
 
 
-	<meta name="twitter:description" content="Overview  Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro. Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI Toolset emphasizes design over development  Migration  (Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Live database overwritten by exporting localhost.">
+	<meta name="twitter:description" content="Project Overview This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
+Development  Created a custom post type for projects as a plugin using a GenerateWP template. Activated Elementor license and updated stock templates for archive lists and single pages.">
 <meta name="twitter:image" content="https://alexstouffer.github.io/images/ClassicVWs.JPG">
 <meta property="article:published_time" content="2021-04-15T19:14:07-08:00">
 	<meta property="article:updated_time" content="2021-04-15T19:14:07-08:00">
@@ -147,27 +150,25 @@
 </section>
 
     <article  id="articleContent" class="post-content">
-        <h2 id="overview">Overview</h2>
-<ul>
-<li>Project created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA.</li>
-<li>classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro.</li>
-<li>Hosted on an AWS EC2 Instance using Bitnami Wordpress AMI</li>
-<li>Toolset emphasizes design over development</li>
-</ul>
-<h2 id="migration">Migration</h2>
-<ul>
-<li>(Note to Self): Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP.</li>
-<li>Live database overwritten by exporting localhost.sql database from phpmyadmin and importing it to the EC2 instance via SSH and SCP commands</li>
-<li>WP-Contents folder cleared on server using <code>sudo rm -r path/to/wp-contents/*</code> so that the git repo may be cloned into wp-contents without error (directory must be empty).
-<ul>
-<li>Use <code>sudo apt-get install git</code> to install git</li>
-<li>Use <code>git clone path/to/repo.git .</code> to clone the contents of the repo into the working directory without including the parent project folder.</li>
-</ul>
-</li>
-</ul>
-<h2 id="issues">Issues</h2>
-<h3 id="version-control">Version Control</h3>
-<p>Using git as a hub, all of the of the changes were intended to be pushed from a local development and pulled from our EC2 instance. That seemed to not be the case though as changes that were deleted from templates in the localhost showed up on the live server, no matter how many times the git repo was updated. I was able to fix this issue by updating Elementor&rsquo;s CSS Print Method on the production server under: Admin Panel-&gt;Elementor-&gt;Settings-&gt;Advanced. In hindsight, if I were to change this setting in the localhost instance it may make the necassary changes in the git repo.</p>
+        <h2 id="project-overview">Project Overview</h2>
+<p><a href="http://classicvws.shop">This Project</a> was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.</p>
+<h3 id="development">Development</h3>
+<ol>
+<li>Created a custom post type for projects as a plugin using a GenerateWP template.</li>
+<li>Activated Elementor license and updated stock templates for archive lists and single pages.</li>
+<li>Created a custom front page template based off Adobe XD design approved by client.</li>
+<li>Created a custom estimation form using styles from the approved front page.</li>
+</ol>
+<h3 id="migration">Migration</h3>
+<ol>
+<li>Once the bitnami instance was live I overwrote the database. My project&rsquo;s database was exported from the localhost phpmyadmin GUI as a .sql file and I imported it to the EC2 instance via SSH and SCP commands.</li>
+<li>I had to clear the WP-Contents folder on the server using <code>sudo rm -r path/to/wp-contents/*</code> so that the git repo may be cloned into the directory without error (must be empty).</li>
+<li>The instance doesn&rsquo;t include git by default, so I used <code>sudo apt-get install git</code>.</li>
+<li>use <code>git clone path/to/repo.git .</code> to clone the contents of the repo into the working directory of wp-content without including the parent repo folder itself.</li>
+<li>Make sure to associate an elasticIP before pointing a Domain Name at the incstance&rsquo;s public IP. Create an &lsquo;A Record&rsquo; with your host &lsquo;@&rsquo; pointed at your public IP address.</li>
+</ol>
+<h3 id="version-controlcss-rendering-issues-using-elementor-pro">Version Control/CSS Rendering Issues Using Elementor Pro</h3>
+<p>Using git as a hub, all of the of the changes were intended to be pushed from a local development and pulled from our EC2 instance. That seemed to not be the case though as changes that were deleted from templates in the localhost showed up on the live server no matter how many times the git repo was updated. I was able to fix this issue on the live server by updating Elementor&rsquo;s CSS Print Method under: Admin Panel-&gt;Elementor-&gt;Settings-&gt;Advanced. In hindsight, if I were to change this setting in the localhost instance it may make the necassary changes in the git repo.</p>
 
     </article>
     

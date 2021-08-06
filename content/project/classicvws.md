@@ -6,9 +6,9 @@ draft: false
 authors:
     - Alex Stouffer
 ---
-## Project Overview
+## Project Overview 
 
-This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI. 
+[This Project](http://classicvws.shop) was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI. 
 
 ### Development
 1. Created a custom post type for projects as a plugin using a GenerateWP template.
