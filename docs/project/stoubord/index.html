@@ -25,20 +25,23 @@
 
 
 <title>Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord</title>
-<meta name="description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
+<meta name="description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Core Functions The whole project revolves our Feeds class found within our child theme&rsquo;s functions.">
 <meta property="og:title" content="Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
-<meta property="og:url" content="https://alexstouffer.github.io/project/memepact/">
+<meta property="og:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Core Functions The whole project revolves our Feeds class found within our child theme&rsquo;s functions.">
+<meta property="og:url" content="https://alexstouffer.github.io/project/stoubord/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content='https://alexstouffer.github.io/images/StockProgramming.jpg'><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord">
 
-	<link rel="canonical" href="https://alexstouffer.github.io/project/memepact/">
+	<link rel="canonical" href="https://alexstouffer.github.io/project/stoubord/">
 
 
-	<meta name="twitter:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
+	<meta name="twitter:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Core Functions The whole project revolves our Feeds class found within our child theme&rsquo;s functions.">
 <meta name="twitter:image" content="https://alexstouffer.github.io/images/StockProgramming.jpg">
 <meta property="article:published_time" content="2021-04-08T19:14:07-08:00">
 	<meta property="article:updated_time" content="2021-04-08T19:14:07-08:00">
@@ -148,9 +151,24 @@
 
     <article  id="articleContent" class="post-content">
         <h2 id="overview">Overview</h2>
-<p>Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this <a href="http://stoubord.com">project on wordpress</a> and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user. Once I moved onto the community feature, things seemed to get boxed in. Threads through BuddyPress' forum would often result in plugin developers telling users that features were in development and that they would update users at a later time. I also tried reaching out to other freelancing wordpress developers to pay for their consultation. Unfortunately I wasn&rsquo;t able to find the needed expertise. Considering that I would have to invest time learning about the buddypress plugin and how to customize its implementation on top of the wordpress framework, it seemed like a better use of time to remove multiple framework layers if possible, and re-build the project in react or vue.js where there&rsquo;s large sets of documentation and developers who might be better suited to help a solo developer. Wordpress could still be incorporated as a headless CMS if needed.</p>
-<h3 id="how-does-it-function">How Does It Function</h3>
-<p>This build at the moment utilizes the <code>wp_cron()</code> function built into WP Core. This function will only run when a visitor lands on the page, and then only if our creator&rsquo;s latest 7 videos are new content that need to be posted to our server. In a project that I&rsquo;d intend to run as a service, I would use a 3rd party cron service instead so that all creator video metadata is held as a record on the server from the point that the creator is added to the directory. In doing this users can come find information about content that may have been banned or otherwise censored.</p>
+<p>Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this <a href="http://stoubord.com">project on wordpress</a> and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.</p>
+<h3 id="core-functions">Core Functions</h3>
+<p>The whole project revolves our <code>Feeds</code> class found within our child theme&rsquo;s functions.php file. Within the Feeds class are three main functions: <code>fetch_directory_feed</code>, <code>data_render</code>, and <code>url_import</code>.</p>
+<p>Those assist in pulling a single creator&rsquo;s RSS feed. Then outside of that class I&rsquo;ve created a function called <code>fetch_all_directory_feeds</code> to run the fetch process for all creators listed when the homepage URL is triggered with the query parameter <code>?=fetch</code> attached.</p>
+<pre><code>// Fetch Directory Feeds
+if (isset($_GET['fetch'])) {
+    $fetch = $_GET['fetch'];
+    if ($fetch === 'true'){
+        echo '&lt;script&gt;console.log(&quot;fetch called successfully&quot;);&lt;/script&gt;';
+        fetch_all_directory_feeds();
+    } else {
+        echo '&lt;script&gt;console.log(&quot;no respect&quot;);&lt;/script&gt;';
+    }
+}
+</code></pre><h3 id="fetching-feeds-with-cron">Fetching Feeds With Cron</h3>
+<p>This build at the moment utilizes the <a href="https://developer.wordpress.org/reference/functions/wp_cron/">wp_cron()</a> function built into WP Core. This function will only run when a visitor lands on the page, and then only if our creator&rsquo;s latest 7 videos are new content that need to be posted to our server. In a project that I&rsquo;d intend to run as a service, I would use a 3rd party cron service instead so that all creator video metadata is held as a record on the server from the point that the creator is added to the directory. In doing this users can come find information about content that may have been banned or otherwise censored.</p>
+<h3 id="issues">Issues</h3>
+<p>I had completed an MVP instance of the project suitable for one user. Once I moved onto the community feature, things seemed to get boxed in. Threads through BuddyPress' forum would often result in plugin developers telling users that features were in development and that they would update users at a later time. I also tried reaching out to other freelancing wordpress developers to pay for their consultation. Unfortunately I wasn&rsquo;t able to find the needed expertise. Considering that I would have to invest time learning about the buddypress plugin and how to customize its implementation on top of the wordpress framework, it seemed like a better use of time to remove multiple framework layers if possible, and re-build the project in react or vue.js where there&rsquo;s large sets of documentation and developers who might be better suited to help a solo developer. Wordpress could still be incorporated as a headless CMS if needed.</p>
 
     </article>
     

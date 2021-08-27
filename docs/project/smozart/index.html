@@ -24,24 +24,24 @@
 
 
 
-<title>Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord</title>
-<meta name="description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
-<meta property="og:title" content="Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord">
+<title>Sean O&#39;Brien Paintings &amp; Illustrations | Alex Stouffer-DeBord</title>
+<meta name="description" content="Project Overview This Project showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality.">
+<meta property="og:title" content="Sean O&#39;Brien Paintings &amp; Illustrations | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
-<meta property="og:url" content="https://alexstouffer.github.io/project/memepact/">
+<meta property="og:description" content="Project Overview This Project showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality.">
+<meta property="og:url" content="https://alexstouffer.github.io/project/smozart/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://alexstouffer.github.io/images/StockProgramming.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Stoubord&#39;s Picks: Video RSS Directory | Alex Stouffer-DeBord">
+<meta property="og:image" content='https://alexstouffer.github.io/images/seanobrienart.png'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sean O&#39;Brien Paintings &amp; Illustrations | Alex Stouffer-DeBord">
 
-	<link rel="canonical" href="https://alexstouffer.github.io/project/memepact/">
+	<link rel="canonical" href="https://alexstouffer.github.io/project/smozart/">
 
 
-	<meta name="twitter:description" content="Overview Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user.">
-<meta name="twitter:image" content="https://alexstouffer.github.io/images/StockProgramming.jpg">
-<meta property="article:published_time" content="2021-04-08T19:14:07-08:00">
-	<meta property="article:updated_time" content="2021-04-08T19:14:07-08:00">
+	<meta name="twitter:description" content="Project Overview This Project showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality.">
+<meta name="twitter:image" content="https://alexstouffer.github.io/images/seanobrienart.png">
+<meta property="article:published_time" content="2021-04-15T19:14:07-08:00">
+	<meta property="article:updated_time" content="2021-04-15T19:14:07-08:00">
 
 
 
@@ -136,21 +136,34 @@
     <section id="articleHero" class="section narrow">
   <div class="article-hero">
       <header class="article-header">
-          <h1 class="article-hero-heading">Stoubord&#39;s Picks: Video RSS Directory</h1>
+          <h1 class="article-hero-heading">Sean O&#39;Brien Paintings &amp; Illustrations</h1>
       </header>
       
       <div class="article-hero-image" id="ArticleImage__Hero">
-          <img src="../../images/StockProgramming.jpg">
+          <img src="../../images/seanobrienart.png">
       </div>
       
   </div>
 </section>
 
     <article  id="articleContent" class="post-content">
-        <h2 id="overview">Overview</h2>
-<p>Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this <a href="http://stoubord.com">project on wordpress</a> and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content. I had completed an MVP instance of the project suitable for one user. Once I moved onto the community feature, things seemed to get boxed in. Threads through BuddyPress' forum would often result in plugin developers telling users that features were in development and that they would update users at a later time. I also tried reaching out to other freelancing wordpress developers to pay for their consultation. Unfortunately I wasn&rsquo;t able to find the needed expertise. Considering that I would have to invest time learning about the buddypress plugin and how to customize its implementation on top of the wordpress framework, it seemed like a better use of time to remove multiple framework layers if possible, and re-build the project in react or vue.js where there&rsquo;s large sets of documentation and developers who might be better suited to help a solo developer. Wordpress could still be incorporated as a headless CMS if needed.</p>
-<h3 id="how-does-it-function">How Does It Function</h3>
-<p>This build at the moment utilizes the <code>wp_cron()</code> function built into WP Core. This function will only run when a visitor lands on the page, and then only if our creator&rsquo;s latest 7 videos are new content that need to be posted to our server. In a project that I&rsquo;d intend to run as a service, I would use a 3rd party cron service instead so that all creator video metadata is held as a record on the server from the point that the creator is added to the directory. In doing this users can come find information about content that may have been banned or otherwise censored.</p>
+        <h2 id="project-overview">Project Overview</h2>
+<p><a href="https://seanobrien.art">This Project</a> showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality. Since the storefront and checkout application are both hosted on github pages there&rsquo;s no monthly overhead to maintain the site, and they both come with an SSL certificate at no additional cost. Sean paid $4 for his domain the first year, and that&rsquo;s his only payment outside of transaction related fees paid to Braintree and CommerceLayer.</p>
+<h3 id="milestones">Milestones</h3>
+<ol>
+<li>MVP: a user can view the site and provide contact information to the client via Square appointment booking.</li>
+<li>E-Commerce: a user can submit a single photo and purchase multiple canvases of that photo. (current stage, finalizing)</li>
+<li>Analytics: the client can track information about who is visiting his site.</li>
+<li>Headless CMS (low-priority): client can update photos to show latest work and write promo content via a web portal.</li>
+</ol>
+<h3 id="api-integrations">API Integrations</h3>
+<ol>
+<li><a href="https://commercelayer.io/">CommerceLayer</a> - handles shopping cart functionality, customer information, inventory, SKUS &amp; price lists.</li>
+<li><a href="https://www.braintreepayments.com/">Braintree Payments</a> - handles electronic ACH payments from the customer to the client.</li>
+<li><a href="https://uploadcare.com/">Uploadcare</a> - uploads photographs to the uploadcare server with an associated order ID.</li>
+<li><a href="https://analytics.google.com/analytics/web/">Google Analytics</a> (pending) - allows the client to monitor inbound traffic from various marketing methods.</li>
+<li><a href="https://forestry.io/">Forestry.io</a> (pending) - this particular client is savvy enough to use github for his updates, but this CMS is planned for future ease of use.</li>
+</ol>
 
     </article>
     

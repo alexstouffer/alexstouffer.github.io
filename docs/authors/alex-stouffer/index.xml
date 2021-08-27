@@ -18,12 +18,22 @@ Development  Created a custom post type for projects as a plugin using a Generat
     </item>
     
     <item>
-      <title>Memepact: Video RSS Service</title>
-      <link>https://alexstouffer.github.io/project/memepact/</link>
+      <title>Sean O&#39;Brien Paintings &amp; Illustrations</title>
+      <link>https://alexstouffer.github.io/project/smozart/</link>
+      <pubDate>Thu, 15 Apr 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/project/smozart/</guid>
+      <description>Project Overview This Project showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&amp;rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality.</description>
+    </item>
+    
+    <item>
+      <title>Stoubord&#39;s Picks: Video RSS Directory</title>
+      <link>https://alexstouffer.github.io/project/stoubord/</link>
       <pubDate>Thu, 08 Apr 2021 19:14:07 -0800</pubDate>
       
-      <guid>https://alexstouffer.github.io/project/memepact/</guid>
-      <description>Turns out this project was shut down while minimizing projects to save some CA$H. I&amp;rsquo;ll have to update this page once I have everything set up.</description>
+      <guid>https://alexstouffer.github.io/project/stoubord/</guid>
+      <description>Overview Stoubord&amp;rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Core Functions The whole project revolves our Feeds class found within our child theme&amp;rsquo;s functions.</description>
     </item>
     
     <item>
