@@ -153,8 +153,8 @@
 <ol>
 <li>MVP: a user can view the site and provide contact information to the client via Square appointment booking.</li>
 <li>E-Commerce: a user can submit a single photo and purchase multiple canvases of that photo. (current stage, finalizing)</li>
-<li>Analytics: the client can track information about who is visiting his site.</li>
-<li>Headless CMS (low-priority): client can update photos to show latest work and write promo content via a web portal.</li>
+<li>Analytics: the client can track information about who is visiting his site, and use the data for marketing purposes.</li>
+<li>Headless CMS (low-priority): the client can update photos to show latest work and write promo content via a web portal.</li>
 </ol>
 <h3 id="api-integrations">API Integrations</h3>
 <ol>
@@ -162,8 +162,13 @@
 <li><a href="https://www.braintreepayments.com/">Braintree Payments</a> - handles electronic ACH payments from the customer to the client.</li>
 <li><a href="https://uploadcare.com/">Uploadcare</a> - uploads photographs to the uploadcare server with an associated order ID.</li>
 <li><a href="https://analytics.google.com/analytics/web/">Google Analytics</a> (pending) - allows the client to monitor inbound traffic from various marketing methods.</li>
-<li><a href="https://forestry.io/">Forestry.io</a> (pending) - this particular client is savvy enough to use github for his updates, but this CMS is planned for future ease of use.</li>
+<li><a href="https://forestry.io/">Forestry.io</a> (pending) - this particular client is savvy enough to use github for his updates, but this CMS integration is planned for future ease of use.</li>
 </ol>
+<h3 id="challenges">Challenges</h3>
+<p>There were a few struggles with this project doing it the first time, as there&rsquo;s plenty of tutorials about adjacent projects but not one with my exact requirements. Error message 92206 unfortunately hung this projects progress for longer than I care to admit, and it&rsquo;s one of the bigger lessons learned about this project.</p>
+<h5 id="updating-the-path-to-orders-at-checkout">Updating the path to orders at checkout</h5>
+<h5 id="correcting-error-message-92206-statement-url-must-be-13-characters-or-shorter">Correcting Error Message 92206: statement URL must be 13 characters or shorter</h5>
+<h5 id="adding-encrypted-environment-variables-for-api-calls-using-nodejs-and-dotenv">Adding Encrypted Environment Variables For API calls using Node.js and dotenv</h5>
 
     </article>
     

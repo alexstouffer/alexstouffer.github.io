@@ -14,8 +14,8 @@ authors:
 
 1. MVP: a user can view the site and provide contact information to the client via Square appointment booking.
 2. E-Commerce: a user can submit a single photo and purchase multiple canvases of that photo. (current stage, finalizing)
-3. Analytics: the client can track information about who is visiting his site.
-4. Headless CMS (low-priority): client can update photos to show latest work and write promo content via a web portal.
+3. Analytics: the client can track information about who is visiting his site, and use the data for marketing purposes.
+4. Headless CMS (low-priority): the client can update photos to show latest work and write promo content via a web portal.
 
 ### API Integrations
 
@@ -23,5 +23,19 @@ authors:
 2. [Braintree Payments](https://www.braintreepayments.com/) - handles electronic ACH payments from the customer to the client.
 3. [Uploadcare](https://uploadcare.com/) - uploads photographs to the uploadcare server with an associated order ID.
 4. [Google Analytics](https://analytics.google.com/analytics/web/) (pending) - allows the client to monitor inbound traffic from various marketing methods.
-5. [Forestry.io](https://forestry.io/) (pending) - this particular client is savvy enough to use github for his updates, but this CMS is planned for future ease of use.
+5. [Forestry.io](https://forestry.io/) (pending) - this particular client is savvy enough to use github for his updates, but this CMS integration is planned for future ease of use.
 
+### Challenges
+
+There were a few struggles with this project doing it the first time, as there's plenty of tutorials about adjacent projects but not one with my exact requirements. Error message 92206 unfortunately hung this projects progress for longer than I care to admit, and it's one of the bigger lessons learned about this project.
+
+##### Updating the path to orders at checkout
+
+##### Correcting Error Message 92206: statement URL must be 13 characters or shorter
+
+Of course, it's very important to read the exact details of the error message you receive. However the error message could be poorly written which happened to be the case when we received an error code from Braintree Payments (owned by PayPal). Their error message said specifically: 
+```
+Error 92206 Url must be 13 characters or shorter and can only contain letters, numbers and periods.
+```
+
+##### Adding Encrypted Environment Variables For API calls using Node.js and dotenv
