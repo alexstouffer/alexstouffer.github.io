@@ -19,6 +19,4 @@ This project is specifically developed to be hosted for free on Github Pages as 
 - [CommerceLayer](https://commercelayer.io/) - handles shopping cart functionality, customer information, inventory, SKUS & price lists.
 - [Braintree Payments](https://www.braintreepayments.com/) - handles electronic ACH payments from the customer to the client.
 - [Uploadcare](https://uploadcare.com/) - uploads photographs to the uploadcare server with an associated order ID.
-- [Google Analytics](https://analytics.google.com/analytics/web/) (pending) - allows the client to monitor inbound traffic from various marketing methods.
-- [Forestry.io](https://forestry.io/) (pending) - this particular client is savvy enough to use github for his updates, but this CMS integration is planned for future ease-of-use.
 
