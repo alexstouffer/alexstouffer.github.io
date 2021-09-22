@@ -17,7 +17,7 @@ Order processing through the Vue Application triggered a 422 patch error through
 ```
 Error 92206 Url must be 13 characters or shorter and can only contain letters, numbers and periods.
 ```
-A search of the web pulled up a couple pages about paypal error messages and listed them out, but the best I could find from those resources were the error statement itself. The confusion was primarily caused by receiving an error code served by Braintree API that originated from a CommerceLayer API request. What ended up causing the error turned out to not be about a URL at all but rather a payment descriptor given while entering values into your organization's payment gateway settings at CommerceLayer.
+A search of the web pulled up a couple pages about paypal error messages and listed them out, but the best I could find from those resources were the error statement itself. The confusion was primarily caused by receiving an error code served by Braintree API that originated from a CommerceLayer API request. What ended up causing the error turned out to not be about a URL at all but rather a payment descriptor given while entering values into the organization's payment gateway settings at CommerceLayer.
 
 ![DescriptorInfo](/images/DescriptorInfo.JPG)
 
