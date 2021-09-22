@@ -1,5 +1,5 @@
 ---
-title: "Project Retrospective: Sean O'Brien Art"
+title: "Project Retrospective: Art Shop eCommerce on JAMstack"
 date: 2021-08-07T19:14:07-08:00
 hero: ../../images/seanobrienart.png
 draft: false
