@@ -36,3 +36,4 @@ The checkout side of things was developed originally for use on Netflify, but I 
 #### Upcoming Project Milestones
 3. Google Analytics: the client can track information about who is visiting his site, and use the data for various marketing purposes.
 4. Headless CMS (low-priority): the client can update photos to show latest work and write promo content via a web portal.
+5. Host the site via FileCoin to adopt a decentralized approach. It's also supposedly cheaper than AWS.
