@@ -1,0 +1,18 @@
+pre {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-wrap: normal;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #777;
+    padding: 10px;
+    color: grey;
+}
+
+code {
+    color: orangered;
+}

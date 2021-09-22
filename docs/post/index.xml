@@ -6,14 +6,15 @@
     <description>Recent content in Posts on Alex Stouffer-DeBord</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Mar 2021 17:20:56 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 19:14:07 -0800</lastBuildDate><atom:link href="https://alexstouffer.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>This Marketplace Slays Competition When It Comes To Getting The Best Price For Your Gear</title>
-      <link>https://alexstouffer.github.io/post/reverb-guide/</link>
-      <pubDate>Tue, 16 Mar 2021 17:20:56 -0700</pubDate>
+      <title>Project Retrospective: Sean O&#39;Brien Art</title>
+      <link>https://alexstouffer.github.io/post/artretro/</link>
+      <pubDate>Sat, 07 Aug 2021 19:14:07 -0800</pubDate>
       
-      <guid>https://alexstouffer.github.io/post/reverb-guide/</guid>
-      <description>It might have been that back in the day, eBay was the best place to reach a wide market of interested customers. Over time though, eBays reputation has diminished with sellers due to burdensome requirements. Online reviews from sellers claim that they are required to accept returns and refund the money even when the returned item is damaged when shipped back. While that&amp;rsquo;s worth verifying from eBays Terms and Conditions specifically, that should be a major red flag for anyone invested in shipping inventory.</description>
+      <guid>https://alexstouffer.github.io/post/artretro/</guid>
+      <description>This has been by far my favorite project to work on in regards to using a technology stack, specifically the JAMStack. It was my first time building an application this way, but it&amp;rsquo;s rewarding on multiple levels: I&amp;rsquo;ve helped a friend succeed as an entreprenuer, built a product almost any business can start with, and saw valuable opportunities to extend on it.
+This site in particular uses two hosted github page repos based on code published by CommerceLayer for use with their API.</description>
     </item>
     
     <item>
@@ -23,24 +24,6 @@
       
       <guid>https://alexstouffer.github.io/post/nft-music-future/</guid>
       <description>One of the biggest critiques I&amp;rsquo;ve encountered from bearish investors like Peter Schiff regarding Bitcoin and Cryptocurrencies as a whole is that it&amp;rsquo;s intangible. The internet itself is intangible in the same sense, yet everyone uses it without thinking of the hardware, network layers, and other protocols that facilitate everything we do online. No one calls it a fad anymore, but they used to as well. Blockchain technology will progress in a similar fashion, and Non-Fungible Tokens (NFTs) are a new value proposition that ties the tech to a swath of new real-world use cases, and music industry is only one facet of this upcoming economic boom.</description>
-    </item>
-    
-    <item>
-      <title>A Brief Roadmap To Selling Student-Tailored Video Courses</title>
-      <link>https://alexstouffer.github.io/post/roadmap/</link>
-      <pubDate>Sun, 14 Mar 2021 20:36:32 -0700</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/roadmap/</guid>
-      <description>Private music teachers found themselves in an interesting situation last year during COVID-19 Pandemic shutdowns. They found that their jobs as they knew them had been destabilized as long they required that the money needed to be made from teaching students in person at a physical location. Many adapted quickly and began teaching courses through Zoom, Skype, and other video conferencing apps that allowed two musicians to play for eachother from remote locations.</description>
-    </item>
-    
-    <item>
-      <title>The Do&#39;s and Dont&#39;s of Cleaning Guitars</title>
-      <link>https://alexstouffer.github.io/post/cleaning-dos-donts/</link>
-      <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/cleaning-dos-donts/</guid>
-      <description>Do you remember that episode of The Wonder Years where Kevin Arnold&amp;rsquo;s Dad was finally convinced to sell the old family station wagon? The family loved the allure of trading up to a newer vehicle, but once they began to wash that wagon one last time nostalgia feels slapped at their heartstrings. It&amp;rsquo;s kind of like that the first time you sell your old guitar. You remember your first riffs. Your first band.</description>
     </item>
     
   </channel>

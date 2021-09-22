@@ -6,7 +6,26 @@
     <description>Recent content on Alex Stouffer-DeBord</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Apr 2021 19:14:07 -0800</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 19:14:07 -0800</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sean&#39;s Custom Art Shop</title>
+      <link>https://alexstouffer.github.io/project/obrienart/</link>
+      <pubDate>Wed, 15 Sep 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/project/obrienart/</guid>
+      <description>Are you an artist looking to start your own online business? If you currently only have social media channels to show your work, this Art Shop Solution features a method to automate the sales process, and grouping your work by a product or service category. This project was developed to meet 3 main requirements: a blog, a shop, and no monthly fees. The &amp;lsquo;nice-to-have&amp;rsquo; features of this project are currently in development, but we&amp;rsquo;ve delivered with those requirements a business solution built entirely on the JAMstack concept.</description>
+    </item>
+    
+    <item>
+      <title>Project Retrospective: Sean O&#39;Brien Art</title>
+      <link>https://alexstouffer.github.io/post/artretro/</link>
+      <pubDate>Sat, 07 Aug 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/post/artretro/</guid>
+      <description>This has been by far my favorite project to work on in regards to using a technology stack, specifically the JAMStack. It was my first time building an application this way, but it&amp;rsquo;s rewarding on multiple levels: I&amp;rsquo;ve helped a friend succeed as an entreprenuer, built a product almost any business can start with, and saw valuable opportunities to extend on it.
+This site in particular uses two hosted github page repos based on code published by CommerceLayer for use with their API.</description>
+    </item>
+    
     <item>
       <title>Classic VW Restorations</title>
       <link>https://alexstouffer.github.io/project/classicvws/</link>
@@ -15,15 +34,6 @@
       <guid>https://alexstouffer.github.io/project/classicvws/</guid>
       <description>Project Overview This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
 Development  Created a custom post type for projects as a plugin using a GenerateWP template. Activated Elementor license and updated stock templates for archive lists and single pages.</description>
-    </item>
-    
-    <item>
-      <title>Sean O&#39;Brien Paintings &amp; Illustrations</title>
-      <link>https://alexstouffer.github.io/project/smozart/</link>
-      <pubDate>Thu, 15 Apr 2021 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/project/smozart/</guid>
-      <description>Project Overview This Project showcases sample artwork for a sole proprietor interested in selling their custom-commissioned art services online. Sean&amp;rsquo;s a friend of mine and he was interested in starting a new business painting pets and family portraits. What we agreed to build for him was an ecommerce solution built entirely on the JAMstack concept using Hugo SSG as a storefront, Vue.js as a checkout application, and a few APIs to manage the cart, payments, and file uploading functionality.</description>
     </item>
     
     <item>
@@ -37,15 +47,6 @@ Core Functions The whole project revolves our Feeds class found within our child
     </item>
     
     <item>
-      <title>This Marketplace Slays Competition When It Comes To Getting The Best Price For Your Gear</title>
-      <link>https://alexstouffer.github.io/post/reverb-guide/</link>
-      <pubDate>Tue, 16 Mar 2021 17:20:56 -0700</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/reverb-guide/</guid>
-      <description>It might have been that back in the day, eBay was the best place to reach a wide market of interested customers. Over time though, eBays reputation has diminished with sellers due to burdensome requirements. Online reviews from sellers claim that they are required to accept returns and refund the money even when the returned item is damaged when shipped back. While that&amp;rsquo;s worth verifying from eBays Terms and Conditions specifically, that should be a major red flag for anyone invested in shipping inventory.</description>
-    </item>
-    
-    <item>
       <title>Non-Fungible Tokens (NFTs) and Crypto&#39;s Future For the Music Industry</title>
       <link>https://alexstouffer.github.io/post/nft-music-future/</link>
       <pubDate>Tue, 16 Mar 2021 00:38:50 -0700</pubDate>
@@ -55,30 +56,12 @@ Core Functions The whole project revolves our Feeds class found within our child
     </item>
     
     <item>
-      <title>A Brief Roadmap To Selling Student-Tailored Video Courses</title>
-      <link>https://alexstouffer.github.io/post/roadmap/</link>
-      <pubDate>Sun, 14 Mar 2021 20:36:32 -0700</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/roadmap/</guid>
-      <description>Private music teachers found themselves in an interesting situation last year during COVID-19 Pandemic shutdowns. They found that their jobs as they knew them had been destabilized as long they required that the money needed to be made from teaching students in person at a physical location. Many adapted quickly and began teaching courses through Zoom, Skype, and other video conferencing apps that allowed two musicians to play for eachother from remote locations.</description>
-    </item>
-    
-    <item>
       <title>Round Here: In Memorium of Mike &#39;Deezy&#39; DeBord</title>
       <link>https://alexstouffer.github.io/multimedia/deezy/</link>
       <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
       
       <guid>https://alexstouffer.github.io/multimedia/deezy/</guid>
       <description>This is a memorial video for my Stepdad Mike DeBord who passed away following an ultimately fatal motorcycle accident, while riding in Angeles National Forrest, in July of 2017. It showcases VHS Cassettes of family home videos from his side of the family with footage superimposed from the old man&amp;rsquo;s own Instagram account. Photos are keyframed to give them motion similar to the technique Ken Burns uses for photos in his documentaries, and the pace of editing was set to my Dad&amp;rsquo;s own personal anthem: Around Here by Counting Crows.</description>
-    </item>
-    
-    <item>
-      <title>The Do&#39;s and Dont&#39;s of Cleaning Guitars</title>
-      <link>https://alexstouffer.github.io/post/cleaning-dos-donts/</link>
-      <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/cleaning-dos-donts/</guid>
-      <description>Do you remember that episode of The Wonder Years where Kevin Arnold&amp;rsquo;s Dad was finally convinced to sell the old family station wagon? The family loved the allure of trading up to a newer vehicle, but once they began to wash that wagon one last time nostalgia feels slapped at their heartstrings. It&amp;rsquo;s kind of like that the first time you sell your old guitar. You remember your first riffs. Your first band.</description>
     </item>
     
     <item>
