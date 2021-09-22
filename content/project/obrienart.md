@@ -6,7 +6,7 @@ draft: false
 authors:
     - Alex Stouffer
 ---
-Are you an artist looking to start your own online business? If you currently only have social media channels to show your work, this [Art Shop Solution](https://seanobrien.art) features a method to automate the sales process, and grouping your work by a product or service category. This project was developed to meet 3 main requirements: a blog, a shop, and no monthly fees. The 'nice-to-have' features of this project are currently in development, but we've delivered with those requirements a business solution built entirely on the JAMstack concept. For more details on how this project was built, please refer to [my retrospective on the project](/post/artretro.md).
+Are you an artist looking to start your own online business? If you currently only have social media channels to show your work, this [Art Shop Solution](https://seanobrien.art) features a method to automate the sales process, and grouping your work by a product or service category. This project was developed to meet 3 main requirements: a blog, a shop, and no monthly fees. The 'nice-to-have' features of this project are currently in development, but we've delivered with those requirements a business solution built entirely on the JAMstack concept. For more details on how this project was built, please refer to [my retrospective on the project]({{< ref "/post/artretro" >}}).
 
 #### Key Benefits
 1. No direct sales calls necessary. Clients alternatively market their services via content creation, social influence, and inbound links to their products/services. 
