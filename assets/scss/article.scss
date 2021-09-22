@@ -48,9 +48,6 @@
     position: relative;
     z-index: 10;
     margin:100px auto 60px;
-    padding-left: 68px;
-    max-width: 749px;
-    object-fit: cover;
   
     @media screen and (max-width: $desktop){
         padding-left: 53px;
