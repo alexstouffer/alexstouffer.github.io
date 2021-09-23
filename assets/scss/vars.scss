@@ -17,17 +17,17 @@ body{
     --color-mode-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
 
     /*PRIMARY COLORS*/
-    --primary: navy;
+    --primary: #070d22;
     --secondary: #73737D;
     --grey: #73737D;
-    --background-color: tan;
-    --accent: rgb(0, 113, 165);
+    --background-color: rgb(233, 207, 173);
+    --accent: #6166DC;
     --hover: rgba(0, 0, 0, 0.07);
     --gradient: linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%);
     --articleText: #08080B;
     --track: rgba(8, 8, 11, 0.3);
-    --progress: navy;
-    --card: tan;
+    --progress: #000;
+    --card: #fff;
     --error: #EE565B;
     --success: #46B17B;
     --errorBackground: rgba(238, 86, 91, 0.1);
@@ -37,15 +37,15 @@ body{
 
     /*DARK COLORS*/
     --dark-grey: #73737D;
-    --dark-primary: tan;
-    --dark-secondary: tan;
+    --dark-primary: #fff;
+    --dark-secondary: #fff;
     --dark-accent: #E9DAAC;
-    --dark-background: #111216;
+    --dark-background: #070d22;
     --dark-hover: rgba(255, 255, 255, 0.07);
-    --dark-gradient: linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%);
-    --dark-articleText: tan;
+    --dark-gradient: linear-gradient(180deg, #070d22 0%, rgba(66, 81, 98, 0.36) 100%);
+    --dark-articleText: #fff;
     --dark-track: rgba(255, 255, 255, 0.3);
-    --dark-progress: tan;
+    --dark-progress: #fff;
     --dark-card: #1D2128;
     --dark-error: #EE565B;
     --dark-success: #46B17B;
@@ -54,7 +54,7 @@ body{
     --dark-inputBackground: rgba(255, 255, 255, 0.07);
 
     /*PRISM*/
-    --token: tan;
+    --token: #fff;
     --languageJavascript: #e8696b;
     --javascript: #e8696b;
     --background: #292c34;
@@ -63,7 +63,7 @@ body{
     --var: #b3bac5;
     --number: #e4854d;
     --constant: #b3bac5;
-    --plain: tan;
+    --plain: #fff;
     --doctype: #e8696b;
     --tag: #e8696b;
     --keyword: #d49fd4;
@@ -73,10 +73,10 @@ body{
     --className: #ffcf74;
     --attrName: #bf87ba;
     --attrValue: #a8e2a8;
-    --interpolation: tan;
+    --interpolation: #fff;
     --punctuation: #5FA8AA;
     --property: #80cbc4;
-    --propertyAccess: tan;
+    --propertyAccess: #fff;
     --namespace: #b2ccd6;
     --highlight: rgba(255,255,255,0.07);
     --highlightBorder: #e1bde2;
