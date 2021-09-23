@@ -140,7 +140,7 @@ nav li {
 }
 
 .header-menu a:hover {
-    color: orangered;
+    color: var(--accent);
 }
 
 /* [ON BIG SCREEN] */
@@ -176,7 +176,7 @@ nav li {
   }
 
   #hamitems a:hover {
-    color: orangered;
+    color: var(--accent);
   }
 
   #hamitems-mobile a {
