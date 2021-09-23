@@ -140,7 +140,7 @@ nav li {
 }
 
 .header-menu a:hover {
-    color: orangered;
+    color: var(--accent);
 }
 
 /* [ON BIG SCREEN] */
@@ -176,7 +176,7 @@ nav li {
   }
 
   #hamitems a:hover {
-    color: orangered;
+    color: var(--accent);
   }
 
   #hamitems-mobile a {
@@ -242,7 +242,7 @@ nav li {
     /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
     // #hamitems-mobile { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -10rem; z-index: 20; }
+    #hamnav input:checked ~ #hamitems { display: block; margin-bottom: -5rem; z-index: 20; }
     // #hamnav input:checked ~ #hamitems-mobile { display: block; }
 
   }

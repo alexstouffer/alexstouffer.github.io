@@ -1,5 +1,5 @@
 ---
 hero:
-  heading: I help artisan entreprenuers with digital marketing and operational automation.
-  sub-heading: Leverage your trade with a free consultation.
+  heading: I help business owners unlock new paths to success through automation and API integration.
+  sub: try a no-risk, free consultation.
 ---

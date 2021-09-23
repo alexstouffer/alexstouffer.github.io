@@ -1,0 +1,34 @@
+<Section class="section" relative id="Articles__Hero">
+    <div class="heading-container">
+        <div class="column">
+            <h2 class="hero-heading">{{ .Page.Params.hero.heading }}</h2>
+            <!-- Start Square Appointments Embed code --> 
+            <a 
+            class="schedule-btn"
+            target="_top" 
+            href="https://squareup.com/appointments/book/as3u6kbu0irf0k/F4SJ6RB5Y7E9B/start" 
+            rel="nofollow">Let&#x27;s Discuss How</a>
+            <!-- End Square Appointments Embed code -->
+            <h5>{{ .Page.Params.hero.sub }}</h5>
+        </div>
+        <div class="column">
+            <lottie-player class="lottie" src="js/unlock.json" background="transparent" speed=".5" loop autoplay>
+                <img src="images/unlock.svg">
+            </lottie-player>
+        </div>
+    </div>
+    <div class="subheading-container">
+        {{ partial "bio.html" . }}
+        <div class="grid-controls-container">
+            <button id="btnGrid" class="grid-button">
+                {{ partial "icons/ui/tiles.html" . }}
+            </button>
+            <button id="btnRows" class="grid-button">
+                {{ partial "icons/ui/rows.html" . }}
+            </button>
+        </div>
+    </div>
+</Section>
+
+{{ $script := resources.Get "js/toggleLayout.js" }}
+<script src="{{ $script.RelPermalink }}"></script>

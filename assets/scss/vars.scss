@@ -17,11 +17,11 @@ body{
     --color-mode-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
 
     /*PRIMARY COLORS*/
-    --primary: #000;
+    --primary: #070d22;
     --secondary: #73737D;
     --grey: #73737D;
-    --background-color: #fafafa;
-    --accent: rgb(0, 113, 165);
+    --background-color: rgb(233, 207, 173);
+    --accent: #a3652b;
     --hover: rgba(0, 0, 0, 0.07);
     --gradient: linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%);
     --articleText: #08080B;
@@ -40,9 +40,9 @@ body{
     --dark-primary: #fff;
     --dark-secondary: #fff;
     --dark-accent: #E9DAAC;
-    --dark-background: #111216;
+    --dark-background: #070d22;
     --dark-hover: rgba(255, 255, 255, 0.07);
-    --dark-gradient: linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%);
+    --dark-gradient: linear-gradient(180deg, #070d22 0%, rgba(66, 81, 98, 0.36) 100%);
     --dark-articleText: #fff;
     --dark-track: rgba(255, 255, 255, 0.3);
     --dark-progress: #fff;
