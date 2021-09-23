@@ -23,6 +23,11 @@
         }
     }
 
+    @media screen and (max-width: $tablet){
+        p{
+            padding: 0;
+        }
+    }
     
 }
 
