@@ -43,11 +43,19 @@
 }
 
 .heading-container{
-    margin: 15rem 0;
+    margin: 5rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+    .column {
+      width: 50%;
+    }
 
     /*DESKTOP*/
     @media screen and (max-width: $desktop){
-      width: 80%;
+
     }
   
     /*TABLET*/
