@@ -471,8 +471,8 @@
 .article-metadata{
     font-weight: 600;
     font-size: 16px;
-    color: var(--grey);
-    opacity: 0.33;
+    color: var(--accent);
+    opacity: 0.60;
   
     /*PHABLET*/
     @media screen and (max-width: $phablet){
