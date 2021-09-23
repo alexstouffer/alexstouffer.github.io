@@ -9,7 +9,7 @@ authors:
 
 ## Overview
 
-Stoubord's picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this [project on wordpress](http://stoubord.com) and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Stoubord's picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this [project on wordpress](http://picks.stoubord.com) and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
 
 ### Core Functions
 

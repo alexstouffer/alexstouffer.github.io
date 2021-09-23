@@ -244,7 +244,7 @@ Core Functions The whole project revolves our Feeds class found within our child
 
     <article  id="articleContent" class="post-content">
         <h2 id="overview">Overview</h2>
-<p>Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this <a href="http://stoubord.com">project on wordpress</a> and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.</p>
+<p>Stoubord&rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this <a href="http://picks.stoubord.com">project on wordpress</a> and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.</p>
 <h3 id="core-functions">Core Functions</h3>
 <p>The whole project revolves our <code>Feeds</code> class found within our child theme&rsquo;s functions.php file. Within the Feeds class are three main functions: <code>fetch_directory_feed</code>, <code>data_render</code>, and <code>url_import</code>.</p>
 <p>Those assist in pulling a single creator&rsquo;s RSS feed. Then outside of that class I&rsquo;ve created a function called <code>fetch_all_directory_feeds</code> to run the fetch process for all creators listed when the homepage URL is triggered with the query parameter <code>?=fetch</code> attached.</p>
