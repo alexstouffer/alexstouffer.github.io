@@ -1,5 +1,5 @@
 ---
 hero:
   heading: I help business owners unlock new paths to success through automation and digital marketing.
-  sub-heading: try a no-risk, free consultation.
+  sub: try a no-risk, free consultation.
 ---
