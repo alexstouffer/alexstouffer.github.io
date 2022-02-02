@@ -8,7 +8,7 @@ authors:
 ---
 ## Project Overview
 
-I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I've chosen to spin up a bot for a new collection in the space that I love called "GEMMA" by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist's direction. I feel it's a great representation of what this new area of art has to offer. Here's a bit about how the bot works under the hood:
+I built a [Nifty Bot](https://github.com/alexstouffer/NFTBot) that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I've chosen to spin up a bot for a new collection in the space that I love called "[GEMMA](https://twitter.com/Bot_Gemma_NFT)" by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist's direction. I feel it's a great representation of what this new area of art has to offer. Here's a bit about how the bot works under the hood:
 
 ### Collection Scraping
 
@@ -18,7 +18,9 @@ That's where my scraper and verify python scripts come into play. They allow you
 
 However, If the image URI contains the direct hash of the image you can use a single cURL command to download them all into whatever folder you call the command from:
 
-`curl -o "MyImages #1.png" https://bafybeibllqyrhmwqwjlaqdg3evbvzagpjeb3trjnf53c52krj4vbr24olu.ipfs.dweb.link/[1-1000].png`
+```
+curl -o "MyImages #1.png" https://bafybeibllqyrhmwqwjlaqdu.ipfs.dweb.link/[1-1000].png
+```
 
 It's a much faster process, but not many artists seem to prefer doing things this way. It's much more common to get metadata only on your first IPFS request. It's also worth noting that not all browsers can resolve an ipfs address, so I advise using brave browser (links rendered similar in command above) and/or `https://ipfs.io/ipfs/` as the base for URL when making IPFS/HTTP requests. After all of the files are downloaded use the verify.py script to confirm whether any images are missing from your series' image folder.
 
