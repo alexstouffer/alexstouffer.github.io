@@ -248,7 +248,7 @@ Core Functions The whole project revolves our Feeds class found within our child
 <h3 id="core-functions">Core Functions</h3>
 <p>The whole project revolves our <code>Feeds</code> class found within our child theme&rsquo;s functions.php file. Within the Feeds class are three main functions: <code>fetch_directory_feed</code>, <code>data_render</code>, and <code>url_import</code>.</p>
 <p>Those assist in pulling a single creator&rsquo;s RSS feed. Then outside of that class I&rsquo;ve created a function called <code>fetch_all_directory_feeds</code> to run the fetch process for all creators listed when the homepage URL is triggered with the query parameter <code>?=fetch</code> attached.</p>
-<pre><code>// Fetch Directory Feeds
+<pre tabindex="0"><code>// Fetch Directory Feeds
 if (isset($_GET['fetch'])) {
     $fetch = $_GET['fetch'];
     if ($fetch === 'true'){
