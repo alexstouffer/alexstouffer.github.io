@@ -45,3 +45,4 @@ For Newbies: Once uploaded run npm install to install the dependencies, similar 
 
 - Include sales price in USD
 - Report transactions paid in USDC, USDT, DAI, or Wrapped Ether (WETH).
+- Wash Trade Monitoring (Per token_id, check previous transfer addresses for round-trips)
