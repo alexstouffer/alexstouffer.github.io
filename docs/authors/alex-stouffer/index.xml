@@ -36,16 +36,6 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
     </item>
     
     <item>
-      <title>Classic VW Restorations</title>
-      <link>https://alexstouffer.github.io/project/classicvws/</link>
-      <pubDate>Thu, 15 Apr 2021 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/project/classicvws/</guid>
-      <description>Project Overview This Project was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
-Development  Created a custom post type for projects as a plugin using a GenerateWP template. Activated Elementor license and updated stock templates for archive lists and single pages.</description>
-    </item>
-    
-    <item>
       <title>Stoubord&#39;s Picks: Video RSS Directory</title>
       <link>https://alexstouffer.github.io/project/stoubord/</link>
       <pubDate>Thu, 08 Apr 2021 19:14:07 -0800</pubDate>

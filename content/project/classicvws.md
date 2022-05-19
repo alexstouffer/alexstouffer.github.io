@@ -1,16 +1,18 @@
 ---
-title: "Classic VW Restorations"
+title: 'Classic VW Restorations'
 date: 2021-04-15T19:14:07-08:00
 hero: ../../images/ClassicVWs.JPG
-draft: false
+draft: true
 authors:
-    - Alex Stouffer
+  - Alex Stouffer
 ---
-## Project Overview 
 
-[This Project](http://classicvws.shop) was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI. 
+## Project Overview
+
+[This Project](http://classicvws.shop) was created for a local auto shop specializing in Classic Volkswagons out of Fullerton CA. Classicvws.shop is built on WordPress using the popular site builder plugin Elementor Pro, and is hosted on an AWS EC2 Instance using the Bitnami Wordpress AMI.
 
 ### Development
+
 1. Created a custom post type for projects as a plugin using a GenerateWP template.
 2. Activated Elementor license and updated stock templates for archive lists and single pages.
 3. Created a custom front page template based off Adobe XD design approved by client.
@@ -22,7 +24,7 @@ authors:
 2. I had to clear the WP-Contents folder on the server using `sudo rm -r path/to/wp-contents/*` so that the git repo may be cloned into the directory without error (must be empty).
 3. The instance doesn't include git by default, so I used `sudo apt-get install git`.
 4. use `git clone path/to/repo.git .` to clone the contents of the repo into the working directory of wp-content without including the parent repo folder itself.
-5. Make sure to associate an elasticIP before pointing a Domain Name at the incstance's public IP. Create an 'A Record' with your host '@' pointed at your public IP address. 
+5. Make sure to associate an elasticIP before pointing a Domain Name at the incstance's public IP. Create an 'A Record' with your host '@' pointed at your public IP address.
 
 ### Version Control/CSS Rendering Issues Using Elementor Pro
 
