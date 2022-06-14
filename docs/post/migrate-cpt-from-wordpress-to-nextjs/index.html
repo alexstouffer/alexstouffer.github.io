@@ -24,27 +24,24 @@
 
 
 
-<title>Project Retrospective: Art Shop eCommerce on JAMstack | Alex Stouffer-DeBord</title>
-<meta name="description" content="This has been my favorite project to work on. Using the JAMStack made it particularly enjoyable. It was my first time building an application this way, but it is rewarding on multiple levels: I&rsquo;ve helped an artist succeed as an entrepreneur, built a product almost any business can start with, and saw valuable opportunities to extend on it.
-This site uses two hosted GitHub page repos based on code published by CommerceLayer for use with their API.">
-<meta property="og:title" content="Project Retrospective: Art Shop eCommerce on JAMstack | Alex Stouffer-DeBord">
+<title>Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting | Alex Stouffer-DeBord</title>
+<meta name="description" content="I built an RSS reader that pulls content from my favorite YouTube creators, and gives it to me without any kind of algorithmic influence. It’s a current portfolio project built with WordPress that relies on ‘the core’ of conventional WordPress CMS development. While I’m proud of the work I did using Advanced Customer Fields and writing PHP scripts, the site still doesn’t have a very nice User Interface/Experience to present the data that’s being served.">
+<meta property="og:title" content="Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="This has been my favorite project to work on. Using the JAMStack made it particularly enjoyable. It was my first time building an application this way, but it is rewarding on multiple levels: I&rsquo;ve helped an artist succeed as an entrepreneur, built a product almost any business can start with, and saw valuable opportunities to extend on it.
-This site uses two hosted GitHub page repos based on code published by CommerceLayer for use with their API.">
-<meta property="og:url" content="https://alexstouffer.github.io/post/artretro/">
+<meta property="og:description" content="I built an RSS reader that pulls content from my favorite YouTube creators, and gives it to me without any kind of algorithmic influence. It’s a current portfolio project built with WordPress that relies on ‘the core’ of conventional WordPress CMS development. While I’m proud of the work I did using Advanced Customer Fields and writing PHP scripts, the site still doesn’t have a very nice User Interface/Experience to present the data that’s being served.">
+<meta property="og:url" content="https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://alexstouffer.github.io/images/seanobrienart.png'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Project Retrospective: Art Shop eCommerce on JAMstack | Alex Stouffer-DeBord">
+<meta property="og:image" content='https://alexstouffer.github.io/images/birds-migrate.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting | Alex Stouffer-DeBord">
 
-	<link rel="canonical" href="https://alexstouffer.github.io/post/artretro/">
+	<link rel="canonical" href="https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/">
 
 
-	<meta name="twitter:description" content="This has been my favorite project to work on. Using the JAMStack made it particularly enjoyable. It was my first time building an application this way, but it is rewarding on multiple levels: I&rsquo;ve helped an artist succeed as an entrepreneur, built a product almost any business can start with, and saw valuable opportunities to extend on it.
-This site uses two hosted GitHub page repos based on code published by CommerceLayer for use with their API.">
-<meta name="twitter:image" content="https://alexstouffer.github.io/images/seanobrienart.png">
-<meta property="article:published_time" content="2021-09-07T19:14:07-08:00">
-	<meta property="article:updated_time" content="2021-09-07T19:14:07-08:00">
+	<meta name="twitter:description" content="I built an RSS reader that pulls content from my favorite YouTube creators, and gives it to me without any kind of algorithmic influence. It’s a current portfolio project built with WordPress that relies on ‘the core’ of conventional WordPress CMS development. While I’m proud of the work I did using Advanced Customer Fields and writing PHP scripts, the site still doesn’t have a very nice User Interface/Experience to present the data that’s being served.">
+<meta name="twitter:image" content="https://alexstouffer.github.io/images/birds-migrate.jpg">
+<meta property="article:published_time" content="2022-06-14T00:38:50-07:00">
+	<meta property="article:updated_time" content="2022-06-14T00:38:50-07:00">
 
 
 
@@ -233,7 +230,7 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
     <section id="articleHero" class="section narrow">
     <div class="article-hero">
         <header class="article-header">
-            <h1 class="article-hero-heading">Project Retrospective: Art Shop eCommerce on JAMstack</h1>
+            <h1 class="article-hero-heading">Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting</h1>
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     
@@ -256,14 +253,14 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
 
 
 <script src="/js/collapseAuthors.js"></script>
-                    September 7, 2021
-                    • 5 min read
+                    June 14, 2022
+                    • 4 min read
                 </div>
             </div>
         </header>
         
         <div class="article-hero-image" id="ArticleImage__Hero">
-            <img src="../../images/seanobrienart.png">
+            <img src="../../images/birds-migrate.jpg">
         </div>
         
     </div>
@@ -287,32 +284,83 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        <p>This has been my favorite project to work on. Using the JAMStack made it particularly enjoyable. It was my first time building an application this way, but it is rewarding on multiple levels: I&rsquo;ve helped an artist succeed as an entrepreneur, built a product almost any business can start with, and saw valuable opportunities to extend on it.</p>
-<p>This site uses two hosted GitHub page repos based on code published by CommerceLayer for use with their API. The Hugo repo acts as our storefront by adding their <code>clayer-shopping-cart</code> widget into a static website. The Vue.js repo on GitHub pages is a modified version of CommerceLayer&rsquo;s checkout application. The other two APIs used in this project are Braintree Payments (Private key authorization is patched via CommerceLayer) and Uploadcare File Uploader, and these tools combined allow a user case where a customer can upload a photo and pay for an invoice pointing to the uploaded image link for artist reference and a smooth buying experience.</p>
-<h4 id="art-shop-api-integrations">Art Shop API Integrations</h4>
+        <p>I built an <a href="https://picks.stoubord.com">RSS reader</a> that pulls content from my favorite YouTube creators, and gives it to me without any kind of algorithmic influence. It’s a current portfolio project built with WordPress that relies on ‘the core’ of conventional WordPress CMS development. While I’m proud of the work I did using Advanced Customer Fields and writing PHP scripts, the site still doesn’t have a very nice User Interface/Experience to present the data that’s being served. Let’s document the improvement and integrate Next.js as a frontend framework. We’ll by using the plugin <strong><code>WP GraphQL</code></strong> to GET the <code>youtube_posts</code> Custom Post Type(CPT) from our WordPress instance using the headless CMS method.</p>
+<h3 id="targeting-the-cpt-with-a-custom-graphql-query">Targeting the CPT with a Custom GraphQL Query</h3>
+<p>The query below will pull YouTube specific content using GraphQL Composer. It’s available in the WordPress plugin dashboard. Convert a query made with composer into a URL you make make a test request with in the browser.</p>
+<p>URL with GraphQL query added at end:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">http</span><span style="color:#f92672">:</span><span style="color:#75715e">//picks.stoubord.com/graphql/?query=query ytQuery {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">youtubePosts</span>(<span style="color:#a6e22e">first</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">edges</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">node</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">title</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#a6e22e">link</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">date</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">featuredImage</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">node</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">mediaItemUrl</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>URL encoded for web request (replace whitespace with <code>%20</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">http</span><span style="color:#f92672">:</span><span style="color:#75715e">//picks.stoubord.com/graphql/?query=query%20ytQuery%20{%20youtubePosts(first:%2010)%20{%20edges%20{%20node%20{%20title%20link%20id%20date%20featuredImage%20{%20node%20{%20mediaItemUrl%20}%20}%20}%20}%20}%20}&amp;operationName=ytQuery
+</span></span></span></code></pre></div><h3 id="replacing-standard-posts-with-a-custom-post-type-query">Replacing Standard Posts with a Custom Post Type Query</h3>
+<p><a href="https://spacejelly.dev/posts/how-to-fetch-graphql-data-in-next-js-with-apollo-graphql/">Colby Fayok’s Repo</a> had the simplest query using GraphQL, and it used similarly formatted data from the SpaceX API, so I decided to use it as a template for querying the CPT. Under the <code>getStaticProps</code> function we update our URL endpoint to <a href="http://picks.stoubord.com/graphql/"><code>http://picks.stoubord.com/graphql/</code></a>. Placing a console log statement right after the query will help by dumping the <code>data</code> object as a response and refining the object request from there. The final console statement was:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;1st Console Statement :&#39;</span>, <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">youtubePosts</span>.<span style="color:#a6e22e">edges</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">node</span>);
+</span></span></code></pre></div><p>This value is passed as our prop value because it’s as deep as we could go without iterating through an array of the posts. In order to get the values from posts we have to alter the original repo’s map statement to change <code>launches</code> into <code>posts</code> and pass the value <code>data.youtubePosts.edges[0].node</code>. Then in each post during the map function we change the properties to include our node object nested within the JSON response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">key</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">id</span>}
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">link</span>}
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">className</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">card</span>}
+</span></span><span style="display:flex;"><span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">Image</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">featuredImage</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">mediaItemUrl</span>}
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Landscape picture&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span>{<span style="color:#ae81ff">500</span>}
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span>{<span style="color:#ae81ff">500</span>}
+</span></span><span style="display:flex;"><span>    /&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h3</span>&gt;{<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">title</span>}&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">strong</span>&gt;<span style="color:#a6e22e">Published</span><span style="color:#f92672">:</span>&lt;/<span style="color:#f92672">strong</span>&gt;{<span style="color:#e6db74">&#39; &#39;</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#66d9ef">new</span> Date(
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">date</span>
+</span></span><span style="display:flex;"><span>    ).<span style="color:#a6e22e">toLocaleDateString</span>(<span style="color:#e6db74">&#39;en-US&#39;</span>)}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>I made a slight modification to the style to allow 4 pieces of content per row, and set a minimum height to the card so that every post is uniform. With that we have functioning listing page that get’s our latest 16 posts. It will still link back to the WordPress front end a this point, because we don’t have our post route setup on the Next.js project just yet.</p>
+<h3 id="deploying-on-vercel">Deploying on Vercel</h3>
+<p>Logging into Vercel and selecting which repo you want to import from your GitHub is easy, we just have to resolve any errors that may be logged in their output window. I had to install typescript to resolve a peer dependency, and remove any single quote marks within the Home component that weren’t escaped characters. After that the deployment redeployed smoothly and any pushes made to my repo will automatically reflect on the live server using their Continuous Integration/Development pipeline. You can visit the deployment here: <a href="https://next-you-tube-rss-reader-4f8qoi33r-alexstouffer.vercel.app/">https://next-you-tube-rss-reader-4f8qoi33r-alexstouffer.vercel.app/</a></p>
+<h3 id="errors">ERRORS:</h3>
+<h4 id="invalid-src-prop-on-nextimage-hostname-not-configured">Invalid src prop on next/image, hostname not configured</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">Invalid</span> <span style="color:#a6e22e">src</span> <span style="color:#a6e22e">prop</span> ([<span style="color:#a6e22e">http</span><span style="color:#f92672">:</span><span style="color:#75715e">//0.gravatar.com/avatar/01f5f8e7a914bfe3ef40569448588651?s=96&amp;d=mm&amp;r=g](http://0.gravatar.com/avatar/01f5f8e7a914bfe3ef40569448588651?s=96&amp;d=mm&amp;r=g)) on next/image, hostname &#34;[0.gravatar.com](http://0.gravatar.com/)&#34; is not configured under images in your next.config.js
+</span></span></span></code></pre></div><p>To recreate, go to the GitHub repo <a href="https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress"><code>https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress</code></a> and click the deploy button. Follow through with authenticating your GitHub account, and create a repo under your authorization through Vercel. Add the following value as the environment variable for WORDPRESS_API_ENDPOINT: <code>baseurl.com/graphql</code> .</p>
+<h3 id="fix">FIX:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">images</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">domains</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">WORDPRESS_API_URL</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/(http(?:s)?:\/\/)(.*)/</span>)[<span style="color:#ae81ff">2</span>], <span style="color:#75715e">// Valid WP Image domain.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#e6db74">&#39;baseurl.com&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;0.gravatar.com&#39;</span>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>Update the domain list to include &ldquo;0.gravatar.com&rdquo; as specified in the error message. If match throws an error remove line 4 and leave the URLs</p>
+<h3 id="whats-next">What’s Next?</h3>
+<p>While we now have a listing page with various content, we want users to be routed to individual pages on Next.js, as well as querying other custom post type data like our creator directory and custom taxonomy to tag creators with certain interests.</p>
+<h3 id="references">References:</h3>
 <ul>
-<li><a href="https://commercelayer.io/">CommerceLayer</a> - handles shopping cart functionality, customer information, inventory, SKUS &amp; price lists.</li>
-<li><a href="https://www.braintreepayments.com/">Braintree Payments</a> - handles electronic ACH payments from the customer to the client.</li>
-<li><a href="https://uploadcare.com/">Uploadcare</a> - uploads photographs to the uploadcare server with an associated order ID.</li>
+<li><a href="https://nextjs.org/docs/basic-features/pages">https://nextjs.org/docs/basic-features/pages</a></li>
+<li><a href="https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress">https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress</a></li>
+<li><a href="https://www.freecodecamp.org/news/how-to-fetch-graphql-data-in-next-js-with-apollo-graphql/">https://www.freecodecamp.org/news/how-to-fetch-graphql-data-in-next-js-with-apollo-graphql/</a></li>
+<li>h<a href="https://www.apollographql.com/blog/graphql/basics/making-graphql-requests-using-http-methods/">ttps://www.apollographql.com/blog/graphql/basics/making-graphql-requests-using-http-methods/</a></li>
+<li><a href="https://www.section.io/engineering-education/create-a-headless-cms-website-using-wordpress-nextjs-and-graphql/">https://www.section.io/engineering-education/create-a-headless-cms-website-using-wordpress-nextjs-and-graphql/</a></li>
 </ul>
-<h3 id="confusion-surrounding-payment-gateway-descriptors">Confusion Surrounding Payment Gateway Descriptors</h3>
-<p>Order processing through the Vue Application triggered a 422 patch error through CommerceLayer&rsquo;s API that held up the project for a considerable amount of time. I enlisted another person to help me look through the code and trace where things were breaking but couldn&rsquo;t figure things out as described by the error message:</p>
-<pre tabindex="0"><code>Error 92206 Url must be 13 characters or shorter and can only contain letters, numbers, and periods.
-</code></pre><p>A web search returned a couple of pages about PayPal error messages and listed them out, but the best I could find from those resources was the error statement itself. The confusion was primarily caused by receiving an error code served by Braintree API that originated from a CommerceLayer API request. What ended up causing the error turned out to not be about a URL at all but rather a payment descriptor given while entering values into the organization&rsquo;s payment gateway settings at CommerceLayer.</p>
-<p><img src="/images/DescriptorInfo.JPG" alt="DescriptorInfo"></p>
-<p>The gateway info above works. You&rsquo;ll notice that the descriptor URL isn&rsquo;t actually a URL at all, but in our previous gateway I specified .art believing that this needed to be a URL. That pushed us to 14 characters, but I couldn&rsquo;t figure out why there would be a requirement to have a URL operationally limited to 9 characters (4 characters would be fixed for whatever TLD like <code>.com</code>). All it is really is another type of description on a financial statement of where the money was spent. However that didn&rsquo;t seem to be the case at the time as the form also had a 22 character descriptor name specifically for that purpose. That took rigorous validation via regular expression, but the Payment Gateway URL descriptor field didn&rsquo;t limit the character count to 13. While it&rsquo;s always important to follow an error code&rsquo;s specific message, sometimes that error code poorly describes the problem as is the case here.</p>
-<h3 id="storefront-user-experience">Storefront User Experience</h3>
-<p>As you may have guessed, seanobrien.art looks very similar to my portfolio site. Well, that&rsquo;s because it is. Sean actually came to me as a client because he liked the layout of my page and that I could spin the site up for him quickly. We agreed that version 1 of his site would be very simple with only a blog to show his work and a button to schedule a consultation with him through Square appointments scheduling. So I began with the same forestry.io theme, Novela, and our 2nd version of the site modified the products/single.html template as the client&rsquo;s main shopping page.</p>
-<p>In this case, we have a single product (a portrait) with several pricing options (canvas size/color choice). This information needed to be used to get SKU IDs from our API. I decided to name the SKUs by two digits <code>00</code> representing width, a lowercase <code>x</code>, another two digits representing height, and a two-letter suffix to represent Black and White <code>BW</code> or Full Color <code>FC</code>. The 8 by 10 inch canvas in black and white is therefore represented by the SKU <code>08x10BW</code>. Once we had our sku value selected I made sure that my form listeners checked whether all necessary values are true before setting the data attributes on the anchor tag responsible for adding an item to the cart. Button elements could not be used on this page as it broke a Commercelayer script I couldn&rsquo;t edit.</p>
-<p>Similarly I pulled the file URL and filename values from the Uploadcare file uploader upon submission to pass those values to the appropriate shopping cart data attributes. This helped propagate the client&rsquo;s photos on our checkout side of the site where the clients pay. That&rsquo;s when we have to then retrieve the order that we just pushed from our storefront.</p>
-<h3 id="checkout-processing-modification">Checkout Processing Modification</h3>
-<p>The checkout side of things was developed originally for use on Netflify, but I wanted to stay on GitHub to avoid any monthly costs per the client&rsquo;s requirement. Initially the project would not run after cloning, because an Order ID needs to be attached to the <code>baseURL</code> in order to query the API for that specific invoice. The original path to the checkout was <code>baseURL/orderID</code>, but GitHub requires that you point to an HTML file to serve a page and there&rsquo;s no named file in our directory that would match a revolving ID. The implemented solution was to change the orderID to be assigned to query parameters at the end of our URL like this: <code>baseURL?=orderID</code>. At that point the Vue project could pull the order and retrieve it on the live site. With our order processing issue resolved, orders began to process smoothly in the sandbox environment. All that was left was replacing the sandbox credentials to go live in order to have a fully functioning eCommmerce site build on JAMstack.</p>
-<h4 id="roadmap-milestones">Roadmap Milestones</h4>
-<ol start="3">
-<li>Google Analytics: the client can track information about who is visiting his site, and use the data for various marketing purposes.</li>
-<li>Headless CMS (low-priority): the client can update photos to show latest work and write promo content via a web portal.</li>
-<li>Host the site via FileCoin to adopt a decentralized approach. It&rsquo;s also supposedly cheaper than AWS.</li>
-</ol>
 
     </article>
 
@@ -326,13 +374,11 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
     
     
     
-
-
-
-
+        
     
-    
-    
+
+
+
 
 <section id="articleNext" class="section nartrow">
     <h3 class="footer-next-heading">More articles from Alex Stouffer-DeBord</h3>
@@ -340,41 +386,41 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="/post/nft-music-future/" class="article-link"
+                <a href="/post/leverage-wordpress-nextjs/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            <img src="../../images/btc-franklin.jpg" class="article-image" />
+                            <img src="../../images/NextVsWordpress.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Non-Fungible Tokens (NFTs) and Crypto&#39;s Future For the Music Industry
+                                Why You Should Integrate WordPress with Next.js
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                March 16, 2021 · 7 min read
+                                June 13, 2022 · 3 min read
                             </div>
                         </div>
                     </div>
                 </a>
             
-                <a href="/post/migrate-cpt-from-wordpress-to-nextjs/" class="article-link"
+                <a href="/post/artretro/" class="article-link"
                 >
                     <div>
                         <div class="image-container">
-                            <img src="../../images/birds-migrate.jpg" class="article-image" />
+                            <img src="../../images/seanobrienart.png" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting
+                                Project Retrospective: Art Shop eCommerce on JAMstack
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                June 14, 2022 · 4 min read
+                                September 7, 2021 · 5 min read
                             </div>
                         </div>
                     </div>

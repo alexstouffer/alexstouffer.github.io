@@ -3,16 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://alexstouffer.github.io/</loc>
-    <lastmod>2022-06-13T00:38:50-07:00</lastmod>
+    <lastmod>2022-06-14T00:38:50-07:00</lastmod>
   </url><url>
     <loc>https://alexstouffer.github.io/authors/alex-stouffer/</loc>
-    <lastmod>2022-06-13T00:38:50-07:00</lastmod>
+    <lastmod>2022-06-14T00:38:50-07:00</lastmod>
   </url><url>
     <loc>https://alexstouffer.github.io/authors/</loc>
-    <lastmod>2022-06-13T00:38:50-07:00</lastmod>
+    <lastmod>2022-06-14T00:38:50-07:00</lastmod>
+  </url><url>
+    <loc>https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/</loc>
+    <lastmod>2022-06-14T00:38:50-07:00</lastmod>
   </url><url>
     <loc>https://alexstouffer.github.io/post/</loc>
-    <lastmod>2022-06-13T00:38:50-07:00</lastmod>
+    <lastmod>2022-06-14T00:38:50-07:00</lastmod>
   </url><url>
     <loc>https://alexstouffer.github.io/post/leverage-wordpress-nextjs/</loc>
     <lastmod>2022-06-13T00:38:50-07:00</lastmod>

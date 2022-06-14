@@ -6,7 +6,16 @@
     <description>Recent content on Alex Stouffer-DeBord</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2022 00:38:50 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 00:38:50 -0700</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting</title>
+      <link>https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/</link>
+      <pubDate>Tue, 14 Jun 2022 00:38:50 -0700</pubDate>
+      
+      <guid>https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/</guid>
+      <description>I built an RSS reader that pulls content from my favorite YouTube creators, and gives it to me without any kind of algorithmic influence. It’s a current portfolio project built with WordPress that relies on ‘the core’ of conventional WordPress CMS development. While I’m proud of the work I did using Advanced Customer Fields and writing PHP scripts, the site still doesn’t have a very nice User Interface/Experience to present the data that’s being served.</description>
+    </item>
+    
     <item>
       <title>Why You Should Integrate WordPress with Next.js</title>
       <link>https://alexstouffer.github.io/post/leverage-wordpress-nextjs/</link>
