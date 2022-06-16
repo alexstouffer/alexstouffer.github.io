@@ -90,7 +90,7 @@ Logging into Vercel and selecting which repo you want to import from your GitHub
 Invalid src prop ([http://0.gravatar.com/avatar/01f5f8e7a914bfe3ef40569448588651?s=96&d=mm&r=g](http://0.gravatar.com/avatar/01f5f8e7a914bfe3ef40569448588651?s=96&d=mm&r=g)) on next/image, hostname "[0.gravatar.com](http://0.gravatar.com/)" is not configured under images in your next.config.js
 ```
 
-To recreate, go to the GitHub repo [`https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress`](https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress) and click the deploy button. Follow through with authenticating your GitHub account, and create a repo under your authorization through Vercel. Add the following value as the environment variable for WORDPRESS_API_ENDPOINT: `baseurl.com/graphql` . 
+To recreate, go to the [`GitHub repo`](https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress) and click the deploy button. Follow through with authenticating your GitHub account, and create a repo under your authorization through Vercel. Add the following value as the environment variable for WORDPRESS_API_ENDPOINT: `baseurl.com/graphql` . 
 
 ### FIX:
 
