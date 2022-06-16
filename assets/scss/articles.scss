@@ -54,10 +54,6 @@
       a {
         align-items: right;
       }
-      h5 {
-        text-align: right;
-        float: right;
-      }
     }
 
     .schedule-btn {
@@ -69,23 +65,34 @@
       font-family: 'Square Market', sans-serif; 
       letter-spacing: 1px; 
       line-height: 38px; 
-      padding: 0 28px;
+      padding: 10px 28px;
       margin-top: 20px;
       border-radius: 8px; 
       font-weight: 500; 
       font-size: 14px; 
       cursor: pointer; 
-      float: right;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      padding-top: 1rem;
     }
 
     /*DESKTOP*/
-    @media screen and (max-width: $desktop){
-
+    @media screen and (min-width: $tablet){
+      .schedule-btn {
+        float: right;
+        padding: 0 28px;
+      }
+      h5 { 
+        text-align: right;
+        float: right;
+      }
     }
   
     /*TABLET*/
     @media screen and (max-width: $tablet){
-      margin: 2rem 0 1rem 0;
+      margin: 0 0 1rem 0;
       width: 100%;
       flex-direction: column-reverse;
       text-align: center;
@@ -94,18 +101,16 @@
       }
       .hero-heading {
         text-align: center;
+        margin-bottom: 15px;
       }
       .lottie {
-        max-width: 40vh;
+        max-width: 60vw;
         margin: 0 auto;
       }
       .schedule-btn {
-        margin: 30px 0 15px;
+        margin: 40px 0 15px;      
       }
-      h5 { 
-        text-align: right;
-        float: right;
-      }
+
     }
 
     @media screen and (max-width: $phablet){
