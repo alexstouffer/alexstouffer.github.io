@@ -24,23 +24,24 @@
 
 
 
-<title>About | Alex Stouffer-DeBord</title>
-<meta name="description" content="My name is Alex Stouffer and I&rsquo;m a web developer invested in the future of decentralized internet. My goal in 2021 is to begin working on blockchain projects both personal and professional. I love playing music and reading to my infant daughter Lucia.">
-<meta property="og:title" content="About | Alex Stouffer-DeBord">
+<title>NFT Sales Tracker | Alex Stouffer-DeBord</title>
+<meta name="description" content="Project Overview I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &ldquo;GEMMA&rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&rsquo;s direction. I feel it&rsquo;s a great representation of what this new area of art has to offer.">
+<meta property="og:title" content="NFT Sales Tracker | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="My name is Alex Stouffer and I&rsquo;m a web developer invested in the future of decentralized internet. My goal in 2021 is to begin working on blockchain projects both personal and professional. I love playing music and reading to my infant daughter Lucia.">
-<meta property="og:url" content="https://alexstouffer.github.io/about/">
+<meta property="og:description" content="Project Overview I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &ldquo;GEMMA&rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&rsquo;s direction. I feel it&rsquo;s a great representation of what this new area of art has to offer.">
+<meta property="og:url" content="https://alexstouffer.github.io/product/niftybot/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://alexstouffer.github.io/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About | Alex Stouffer-DeBord">
+<meta property="og:image" content='https://alexstouffer.github.io/images/Gemma2.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NFT Sales Tracker | Alex Stouffer-DeBord">
 
-	<link rel="canonical" href="https://alexstouffer.github.io/about/">
+	<link rel="canonical" href="https://alexstouffer.github.io/product/niftybot/">
 
 
-	<meta name="twitter:description" content="My name is Alex Stouffer and I&rsquo;m a web developer invested in the future of decentralized internet. My goal in 2021 is to begin working on blockchain projects both personal and professional. I love playing music and reading to my infant daughter Lucia.">
-<meta name="twitter:image" content="https://alexstouffer.github.io/uploads/default.jpg">
-<meta property="article:published_time" content="">
+	<meta name="twitter:description" content="Project Overview I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &ldquo;GEMMA&rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&rsquo;s direction. I feel it&rsquo;s a great representation of what this new area of art has to offer.">
+<meta name="twitter:image" content="https://alexstouffer.github.io/images/Gemma2.jpg">
+<meta property="article:published_time" content="2022-01-21T00:00:00&#43;00:00">
+	<meta property="article:updated_time" content="2022-01-21T00:00:00&#43;00:00">
 
 
 
@@ -224,14 +225,44 @@
     <section id="articleHero" class="section narrow">
   <div class="article-hero">
       <header class="article-header">
-          <h1 class="article-hero-heading">About</h1>
+          <h1 class="article-hero-heading">NFT Sales Tracker</h1>
       </header>
+      
+      <div class="article-hero-image" id="ArticleImage__Hero">
+          <img src="../../images/Gemma2.jpg">
+      </div>
       
   </div>
 </section>
 
     <article  id="articleContent" class="post-content">
-        <p>My name is Alex Stouffer and I&rsquo;m a web developer invested in the future of decentralized internet. My goal in 2021 is to begin working on blockchain projects both personal and professional. I love playing music and reading to my infant daughter Lucia.</p>
+        <h2 id="project-overview">Project Overview</h2>
+<p>I built a <a href="https://github.com/alexstouffer/NFTBot">Nifty Bot</a> that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &ldquo;<a href="https://twitter.com/Bot_Gemma_NFT">GEMMA</a>&rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&rsquo;s direction. I feel it&rsquo;s a great representation of what this new area of art has to offer. Here&rsquo;s a bit about how the bot works under the hood:</p>
+<h3 id="collection-scraping">Collection Scraping</h3>
+<p>I made the choice to feature these pieces in their full splendor. While you can rely on the image provided by Twitter&rsquo;s preview when you link to your preferred secondary marketplace, you don&rsquo;t want to do this. The intent of the bot is to increase an NFT collection&rsquo;s prominance by showcasing art with every sale. Rest easy knowing that you can still incorporate links without adding a preview if an image is attached. The only problem is that you&rsquo;ll have to collect every photo, and I don&rsquo;t recommend right-clicking to save every file.</p>
+<p>That&rsquo;s where my scraper and verify python scripts come into play. They allow you to first take the image URI information and find the token&rsquo;s metadata. From there the metadata is parsed until we identify the image hash and make a 2nd get request to download the image itself. Each file is downloaded synchronously and it takes a while to complete downloads using this method due to how many calls need to get made.</p>
+<p>However, If the image URI contains the direct hash of the image you can use a single cURL command to download them all into whatever folder you call the command from:</p>
+<pre tabindex="0"><code>curl -o &#34;MyImages #1.png&#34; https://bafybeibllqyrhmwqwjlaqdu.ipfs.dweb.link/[1-1000].png
+</code></pre><p>It&rsquo;s a much faster process, but not many artists seem to prefer doing things this way. It&rsquo;s much more common to get metadata only on your first IPFS request. It&rsquo;s also worth noting that not all browsers can resolve an ipfs address, so I advise using brave browser (links rendered similar in command above) and/or <code>https://ipfs.io/ipfs/</code> as the base for URL when making IPFS/HTTP requests. After all of the files are downloaded use the verify.py script to confirm whether any images are missing from your series&rsquo; image folder.</p>
+<h3 id="local-development">Local Development</h3>
+<ul>
+<li>Using a Moralis.io server and their SDK, I created a websocket listner that tracks blockchain transfers based on the token&rsquo;s contract address, and the value traded in Ethereum.</li>
+<li>In order to avoid working with an additional database component, I use my API credentials to pull the last block number from a previous tweet if it contains the string &ldquo;SOLD&rdquo; in all-caps. I use a loop to avoid tweets that are unrelated.</li>
+<li>Once the block number has been parsed from the previous tweet, I fill an array called <code>hopper</code> with all transactions up to the previous block number.</li>
+<li>Each transaction in the hopper is drafted into a tweet based on a variety of conditions including address information and price levels. Then each tweet is posted individually starting with the oldest sale in the list so that the newest is most recent.</li>
+<li>Rinse &amp; Repeat every 30 seconds.</li>
+</ul>
+<h3 id="remote-hosting">Remote Hosting</h3>
+<p>This bot is hosted on AWS using an EC2 Instance for an Ubuntu Web Server using Node.js. It comes with pm2 pre-installed and that allows us to run our program as a background process requiring no front-end user, also known as a daemon. We can run multiple bots off of this one EC2 instance. It just requires you to state which files should be ran within your server. The individual bot only requires one file to run called <code>client.js</code>. If you want to list which services are running on pm2 use the command <code>pm2 list</code>, to start the bot use <code>pm2 start client</code>, and to stop it use <code>pm2 stop client</code>.</p>
+<p>All of the files are uploaded using an ssh connection and the scp command in bash. Below is an example that transfers all files within the images folder to the matching remote directory.
+<code>scp -i ~/.ssh/myssh.pem c:/webs/NiftyBot/images/* ubuntu@ec2-12-345-678-901.us-east-2.compute.amazonaws.com:NiftyBot/images/</code></p>
+<p>For Newbies: Once uploaded run npm install to install the dependencies, similar to if it was being ran locally. Do not attempt to transfer a node_modules or .git folder via scp. If you want version control on your server files clone the repo directly into the server instead.</p>
+<h4 id="intended-future-updates">Intended Future Updates</h4>
+<ul>
+<li>Include sales price in USD</li>
+<li>Report transactions paid in USDC, USDT, DAI, or Wrapped Ether (WETH).</li>
+<li>Wash Trade Monitoring (Per token_id, check previous transfer addresses for round-trips)</li>
+</ul>
 
     </article>
     
@@ -255,12 +286,14 @@
 
 
 
-
-
-
     
     
     
+        
+    
+
+
+
 
 <section id="articleNext" class="section nartrow">
     <h3 class="footer-next-heading">More articles from Alex Stouffer-DeBord</h3>
@@ -268,21 +301,41 @@
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="/about/" class="article-link"
+                <a href="/product/obrienart/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            <img src="" class="article-image" />
+                            <img src="../../images/seanform.JPG" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                About
+                                Sean&#39;s Custom Art Shop
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                January 1, 0001 · 1 min read
+                                September 15, 2021 · 3 min read
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="/product/stoubord/" class="article-link"
+                >
+                    <div>
+                        <div class="image-container">
+                            <img src="../../images/StockProgramming.jpg" class="article-image" />
+                        </div>
+                        <div>
+                            <h2 class="article-title">
+                                Stoubord&#39;s Picks: Video RSS Directory
+                            </h2>
+                            <p class="article-excerpt">
+                                
+                            </p>
+                            <div class="article-metadata">
+                                April 8, 2021 · 2 min read
                             </div>
                         </div>
                     </div>

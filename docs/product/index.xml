@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on Alex Stouffer-DeBord</title>
+    <link>https://alexstouffer.github.io/product/</link>
+    <description>Recent content in Products on Alex Stouffer-DeBord</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://alexstouffer.github.io/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NFT Sales Tracker</title>
+      <link>https://alexstouffer.github.io/product/niftybot/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexstouffer.github.io/product/niftybot/</guid>
+      <description>Project Overview I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&amp;rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &amp;ldquo;GEMMA&amp;rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&amp;rsquo;s direction. I feel it&amp;rsquo;s a great representation of what this new area of art has to offer.</description>
+    </item>
+    
+    <item>
+      <title>Sean&#39;s Custom Art Shop</title>
+      <link>https://alexstouffer.github.io/product/obrienart/</link>
+      <pubDate>Wed, 15 Sep 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/product/obrienart/</guid>
+      <description>Many people dream of owning their own business but they are limited to a small yet engaged audience on social media. If that sounds like a problem you are dealing with this Art Shop is the solution. You can finally own your own business from home and without too much investment capital. This package features an automated sales pipeline and grouped products or services. It met the original stakeholder&amp;rsquo;s 3 main requirements: a blog to promote work, a shop to sell directly from home, and no monthly fees.</description>
+    </item>
+    
+    <item>
+      <title>Stoubord&#39;s Picks: Video RSS Directory</title>
+      <link>https://alexstouffer.github.io/product/stoubord/</link>
+      <pubDate>Thu, 08 Apr 2021 19:14:07 -0800</pubDate>
+      
+      <guid>https://alexstouffer.github.io/product/stoubord/</guid>
+      <description>Overview Stoubord&amp;rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
+Core Functions The whole project revolves our Feeds class found within our child theme&amp;rsquo;s functions.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -28,19 +28,19 @@ Slow page speeds &amp;amp; Poor SEO ranking Wordpress can be excellent when opti
     
     <item>
       <title>NFT Sales Tracker</title>
-      <link>https://alexstouffer.github.io/project/niftybot/</link>
+      <link>https://alexstouffer.github.io/product/niftybot/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://alexstouffer.github.io/project/niftybot/</guid>
+      <guid>https://alexstouffer.github.io/product/niftybot/</guid>
       <description>Project Overview I built a Nifty Bot that tracks sales for a single collection of Non-Fungible Tokens (NFTs). For showcasing purposes I&amp;rsquo;ve chosen to spin up a bot for a new collection in the space that I love called &amp;ldquo;GEMMA&amp;rdquo; by Los Angeles based artist Tristan Eaton. This collection is a series of 5k portraits all generated programatically under the artist&amp;rsquo;s direction. I feel it&amp;rsquo;s a great representation of what this new area of art has to offer.</description>
     </item>
     
     <item>
       <title>Sean&#39;s Custom Art Shop</title>
-      <link>https://alexstouffer.github.io/project/obrienart/</link>
+      <link>https://alexstouffer.github.io/product/obrienart/</link>
       <pubDate>Wed, 15 Sep 2021 19:14:07 -0800</pubDate>
       
-      <guid>https://alexstouffer.github.io/project/obrienart/</guid>
+      <guid>https://alexstouffer.github.io/product/obrienart/</guid>
       <description>Many people dream of owning their own business but they are limited to a small yet engaged audience on social media. If that sounds like a problem you are dealing with this Art Shop is the solution. You can finally own your own business from home and without too much investment capital. This package features an automated sales pipeline and grouped products or services. It met the original stakeholder&amp;rsquo;s 3 main requirements: a blog to promote work, a shop to sell directly from home, and no monthly fees.</description>
     </item>
     
@@ -56,10 +56,10 @@ This site uses two hosted GitHub page repos based on code published by CommerceL
     
     <item>
       <title>Stoubord&#39;s Picks: Video RSS Directory</title>
-      <link>https://alexstouffer.github.io/project/stoubord/</link>
+      <link>https://alexstouffer.github.io/product/stoubord/</link>
       <pubDate>Thu, 08 Apr 2021 19:14:07 -0800</pubDate>
       
-      <guid>https://alexstouffer.github.io/project/stoubord/</guid>
+      <guid>https://alexstouffer.github.io/product/stoubord/</guid>
       <description>Overview Stoubord&amp;rsquo;s picks is my first attempt to aggregate video content from YouTube creators by RSS feeds. The plan was to build this project on wordpress and then use the BuddyPress plugin to create a user-community. Users would update a directory of creators as well as niche tags on creator profiles to help the community find similar content.
 Core Functions The whole project revolves our Feeds class found within our child theme&amp;rsquo;s functions.</description>
     </item>
@@ -71,15 +71,6 @@ Core Functions The whole project revolves our Feeds class found within our child
       
       <guid>https://alexstouffer.github.io/post/nft-music-future/</guid>
       <description>One of the biggest critiques I&amp;rsquo;ve encountered from bearish investors like Peter Schiff regarding Bitcoin and Cryptocurrencies as a whole is that it&amp;rsquo;s intangible. The internet itself is intangible in the same sense, yet everyone uses it without thinking of the hardware, network layers, and other protocols that facilitate everything we do online. No one calls it a fad anymore, but they used to as well. Blockchain technology will progress in a similar fashion, and Non-Fungible Tokens (NFTs) are a new value proposition that ties the tech to a swath of new real-world use cases, and music industry is only one facet of this upcoming economic boom.</description>
-    </item>
-    
-    <item>
-      <title>Round Here: In Memorium of Mike &#39;Deezy&#39; DeBord</title>
-      <link>https://alexstouffer.github.io/multimedia/deezy/</link>
-      <pubDate>Sun, 07 Mar 2021 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/multimedia/deezy/</guid>
-      <description>This is a memorial video for my Stepdad Mike DeBord who passed away following an ultimately fatal motorcycle accident, while riding in Angeles National Forrest, in July of 2017. It showcases VHS Cassettes of family home videos from his side of the family with footage superimposed from the old man&amp;rsquo;s own Instagram account. Photos are keyframed to give them motion similar to the technique Ken Burns uses for photos in his documentaries, and the pace of editing was set to my Dad&amp;rsquo;s own personal anthem: Around Here by Counting Crows.</description>
     </item>
     
   </channel>
