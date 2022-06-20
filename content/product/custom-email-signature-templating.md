@@ -31,7 +31,7 @@ We're know all set to begin building our functional email signature template. On
 
 A useful tip when using a Table Generator is to create a row that only represents your background color and have it span all columns. That way the row underneath it can lay over the top of that background color when styled appropriately using the `position` attribute.
 
-### Step 5: Add the Signature in Your Email Service Provider
+### Step 4: Add the Signature in Your Email Service Provider
 
 Now that you have your template it's time to add it to our email client. If your client allows for direct input of HTML use that. Otherwise open your template `.html` file in a browser window and press `CTRL + A` to select everything on the page before copying, and then paste it into your email signature field. Click save and test your email out to ensure that you're all good to go.[Google](https://support.google.com/mail/answer/8395?hl=en&co=GENIE.Platform%3DDesktop) and [Outlook](https://support.microsoft.com/en-us/office/create-an-email-signature-31fb24f9-e698-4789-b92a-f0e777f774ca) have specific directions available for their email services.
 
