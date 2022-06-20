@@ -1,7 +1,7 @@
 ---
 title: 'Win Clients With Professional Email Signatures'
 date: 2022-06-16T00:38:50-07:00
-hero: ../../images/email-sig.png
+hero: ../../images/email-sig-featured.png
 draft: false
 authors:
   - Alex Stouffer
