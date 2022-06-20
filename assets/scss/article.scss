@@ -508,6 +508,21 @@
     color: #fff;
 }
 
+@media screen and (max-width: $phablet) {
+  .article-cta {
+    flex-direction: column;
+  }
+  .article-cta__photo-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .article-cta__message {
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+  }
+}
+
 /**************************************ARTICLE BODY**************************************/
 
 .post-content {

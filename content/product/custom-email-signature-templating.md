@@ -7,7 +7,7 @@ authors:
   - Alex Stouffer
 ---
 
-We always want to approach our sales prospects with the utmost professionalism whether we're working independently or as part of a larger organization. That can be pretty challenging when the best option to present ourself is a cold email. They don't know who we are or our reputation. If a client can't gauge that quickly they will not burn any time to consider our value proposition. However, there are many things we can do to improve our chances with new clients over cold emails. In this post we'll highlight how to create custom email signatures. This valuable addition to your business not only acts as a business card, but as a way to humanize ourselves with a profile picture and engender trust with the complete strangers we hope to begin relationships with.
+We always want to approach our sales prospects with the utmost professionalism whether we're working independently or as part of a larger organization. That can be pretty challenging when the best option to present ourself is a cold email. They don't know who we are or our reputation. If a client can't gauge that quickly they will not burn their valuable time to consider our proposition. However, there are many things we can do to improve our chances with new clients over cold emails. In this post we'll highlight how to create custom email signatures. This valuable addition to your business not only acts as a business card, but as a way to humanize ourselves with a profile picture and engender trust with the complete strangers we hope to begin relationships with. Read on to find out how you can create your own, or read the section headers and skip to the end to find out how I can help. 
 
 ### Step 1: Create a Design That Best Represents Your Brand
 
@@ -39,6 +39,6 @@ Now that you have your template it's time to add it to our email client. If your
 
 It's possible to use a spreadsheet of employee information and a custom script to input each employees information into its own rendered template. It can be a pretty daunting task, if you're not familiar at all with writing code. If that's the case, please reach out to me for help.
 
-I offer a complete package covering design, revisions, development, and scripting for a flat rate of $1000 USD for the first 100 employees. Additional employees are $10 for each thereafter, with options to add a form generating new & consistent signatures for every employee you hire moving into the future.
+I offer a complete package covering design, revisions, development, and scripting for a flat rate of $1000 USD for the first 50 employees. Additional employees are $20 for each thereafter, with options to add a form generating new & consistent signatures for every employee you hire moving into the future. Lock in early pricing now while this service platform is under initial development, and get your fully customized template created.
 
 Don't let poor presentation be the reason you missed out on a sale. Schedule your free consultation today!
