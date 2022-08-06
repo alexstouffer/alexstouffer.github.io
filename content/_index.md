@@ -1,5 +1,5 @@
 ---
 hero:
   heading: Achievements Unlocked
-  sub: We provide tools to clear the path to your success.
+  sub: We'll help you open the path to your success.
 ---
