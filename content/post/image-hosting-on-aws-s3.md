@@ -48,7 +48,7 @@ select all the images that need to be made public and then click the 'actions' b
 
 ![S3-Step7.PNG](/images/s3-tutorial/S3-Step7.PNG)
 
-### The Object URL what you use when embedding images
+### The Object URL is what you use when embedding images
 Once you click on a file within the S3 bucket you'll be brought to a page with informations about the file itself. The important information needed for our purposes is the 'Object URL'. If you click on that link you'll view the uploaded file/image and see that the URL matches what was given on the AWS Object page. 
 
 ![S3-Step8.PNG](/images/s3-tutorial/S3-Step8.PNG)
