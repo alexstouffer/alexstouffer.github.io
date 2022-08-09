@@ -1,7 +1,6 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.97.0" />
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,29 +18,28 @@
 
 
 
-	
 
 	
 
 
 
 
-<title>Alex Stouffer-DeBord</title>
-<meta name="description" content="">
-<meta property="og:title" content="Alex Stouffer-DeBord">
+<title>How to Host Images on an AWS S3 Bucket | Alex Stouffer-DeBord</title>
+<meta name="description" content="Amazon Web Service&rsquo;s S3 Buckets are my preferred method for inserting images into content that might go into things like email signatures. While a free service like Dropbox could be used instead, images don&rsquo;t always reliably show when composing new emails. That can leave people within an organization confused about whether their signatures will appear correctly on the receiving end, and they may spend unnecessary time asking IT departments whether their signatures are working as intended or testing it themselves.">
+<meta property="og:title" content="How to Host Images on an AWS S3 Bucket | Alex Stouffer-DeBord">
 <meta property="og:site_name" content="Alex Stouffer-DeBord">
-<meta property="og:description" content="">
-<meta property="og:url" content="https://alexstouffer.github.io/">
+<meta property="og:description" content="Amazon Web Service&rsquo;s S3 Buckets are my preferred method for inserting images into content that might go into things like email signatures. While a free service like Dropbox could be used instead, images don&rsquo;t always reliably show when composing new emails. That can leave people within an organization confused about whether their signatures will appear correctly on the receiving end, and they may spend unnecessary time asking IT departments whether their signatures are working as intended or testing it themselves.">
+<meta property="og:url" content="https://alexstouffer.github.io/post/image-hosting-on-aws-s3/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content=''><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alex Stouffer-DeBord">
+<meta property="og:image" content='https://alexstouffer.github.io/images/S3BucketHowTo.png'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Host Images on an AWS S3 Bucket | Alex Stouffer-DeBord">
 
-	<link rel="canonical" href="https://alexstouffer.github.io/">
+	<link rel="canonical" href="https://alexstouffer.github.io/post/image-hosting-on-aws-s3/">
 
 
-	<meta name="twitter:description" content="">
-<meta name="twitter:image" content="">
+	<meta name="twitter:description" content="Amazon Web Service&rsquo;s S3 Buckets are my preferred method for inserting images into content that might go into things like email signatures. While a free service like Dropbox could be used instead, images don&rsquo;t always reliably show when composing new emails. That can leave people within an organization confused about whether their signatures will appear correctly on the receiving end, and they may spend unnecessary time asking IT departments whether their signatures are working as intended or testing it themselves.">
+<meta name="twitter:image" content="https://alexstouffer.github.io/images/S3BucketHowTo.png">
 <meta property="article:published_time" content="2022-08-08T19:14:07-08:00">
 	<meta property="article:updated_time" content="2022-08-08T19:14:07-08:00">
 
@@ -223,352 +221,184 @@
 
         
 
-<Section class="section" relative id="Articles__Hero">
-    <div class="heading-container">
-        <div class="column">
-            <h2 class="hero-heading">Achievements Unlocked</h2>
-             
-            <a 
-            class="schedule-btn"
-            target="_top" 
-            href="https://squareup.com/appointments/book/as3u6kbu0irf0k/F4SJ6RB5Y7E9B/start" 
-            rel="nofollow">Create the keys</a>
-            
-            <h5>We&#39;ll help you open the path to your success.</h5>
-        </div>
-        <div class="column">
-            <lottie-player class="lottie" src="js/unlock.json" background="transparent" speed=".5" loop autoplay>
-                <img src="images/unlock.svg">
-            </lottie-player>
-        </div>
-    </div>
-    <div class="subheading-container">
-            <div class="bio-container">
-        
-            
-                
-                    <a href="/authors/alex-stouffer/" class="bio-link">
-                        
-                            <div class="bio-avatar">
-                                <div class="bio-avatar-inner">
-                                    <img class="author-avatar" src="/images/stouffer.jpg" />
-                                </div>
-                            </div>
-                        
-                        
-                            <p class="bio-text">Alex Stouffer-DeBord guides financial advisors through the process of creating effective brand messaging and web-tools built to promote that message. Let&#39;s take your mastery of the financial world and present it to the metaverse. 
-</p>
-                        
-                    </a>
-                
-            
-        
-    </div>
-        <div class="grid-controls-container">
-            <button id="btnGrid" class="grid-button">
-                <svg 
-width="26"
-height="26"
-viewBox="0 0 26 26"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-<path id="tiles"
-  fill="#000"
-  d="M4.33337 13.8424H12.0371V5.4165H4.33337V13.8424ZM4.33337 20.5832H12.0371V15.5276H4.33337V20.5832ZM13.963 20.5832H21.6667V12.1572H13.963V20.5832ZM13.963 5.4165V10.4721H21.6667V5.4165H13.963Z"
-/>
-</svg>
-            </button>
-            <button id="btnRows" class="grid-button">
-                <svg 
-width="26"
-height="26"
-viewBox="0 0 26 26"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-<path id="rows"
-  fill="#000"
-  d="M4.33331 15.1665H8.41174V10.8332H4.33331V15.1665ZM4.33331 20.5832H8.41174V16.2498H4.33331V20.5832ZM4.33331 9.74984H8.41174V5.4165H4.33331V9.74984ZM9.43135 15.1665H21.6666V10.8332H9.43135V15.1665ZM9.43135 20.5832H21.6666V16.2498H9.43135V20.5832ZM9.43135 5.4165V9.74984H21.6666V5.4165H9.43135Z"
-/>
-</svg>
-            </button>
-        </div>
-    </div>
-</Section>
-
-
-<script src="/js/toggleLayout.js"></script>
-
-
-
 <section class="section narrow">
-  <section class="section nartrow ">
-    <div id="articlesList" class="articles-list-container show-details">
-      
-      
-      
-      
-        
-        
-          <div class="post-row">
-        
-          <a href="/post/image-hosting-on-aws-s3/" class="article-link"            
-          
-          
-            id="article-link-bigger"
-            
-          
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/S3BucketHowTo.png" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  How to Host Images on an AWS S3 Bucket
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  August 8, 2022 • 4 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
+
+    <section id="articleHero" class="section narrow">
+    <div class="article-hero">
+        <header class="article-header">
+            <h1 class="article-hero-heading">How to Host Images on an AWS S3 Bucket</h1>
+            <div class="article-hero-subtitle">
+                <div class="article-meta">
+                    
+
+
     
-        
-        
-          <a href="/product/custom-email-signature-templating/" class="article-link"            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/email-sig-featured.png" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Win Clients With Professional Email Signatures
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  June 16, 2022 • 6 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-          </div>
-            
-            
-              
-            
-        
+            <a href="/authors/alex-stouffer/" class="article-author-link">
+                
+                    <div class="article-author-avatar">
+                        <img src="/images/stouffer.jpg" />
+                    </div>
+                
+                
+                <strong>Alex Stouffer</strong>
+                
+                <span class="hide-on-mobile">,&nbsp;</span>
+            </a>
     
-        
-        
-          <div class="post-row">
-        
-          <a href="/post/migrate-cpt-from-wordpress-to-nextjs/" class="article-link"            
-          
-            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/birds-migrate.jpg" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  June 14, 2022 • 4 min read
+
+
+
+<script src="/js/collapseAuthors.js"></script>
+                    August 8, 2022
+                    • 4 min read
                 </div>
-              </div>
             </div>
-          </a>
+        </header>
         
+        <div class="article-hero-image" id="ArticleImage__Hero">
+            <img src="../../images/S3BucketHowTo.png">
+        </div>
         
-        
-    
-        
-        
-          <a href="/post/leverage-wordpress-nextjs/" class="article-link"            
-          
-            
-              id="article-link-bigger"
-              
-            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/NextVsWordpress.jpg" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Why You Should Integrate WordPress with Next.js
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  June 13, 2022 • 3 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-          </div>
-            
-            
-              
-            
-        
-    
-        
-        
-          <div class="post-row">
-        
-          <a href="/product/niftybot/" class="article-link"            
-          
-          
-            id="article-link-bigger"
-            
-          
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/Gemma2.jpg" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  NFT Sales Tracker
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  January 21, 2022 • 4 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-    
-        
-        
-          <a href="/product/obrienart/" class="article-link"            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/seanform.JPG" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Sean&#39;s Custom Art Shop
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  September 15, 2021 • 3 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-          </div>
-            
-            
-              
-            
-        
-    
-        
-        
-          <div class="post-row">
-        
-          <a href="/post/artretro/" class="article-link"            
-          
-            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/seanobrienart.png" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Project Retrospective: Art Shop eCommerce on JAMstack
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  September 7, 2021 • 5 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-    
-        
-        
-          <a href="/product/stoubord/" class="article-link"            
-          
-            
-              id="article-link-bigger"
-              
-            
-          >
-            <div class="article-data-outer">
-              <div class="image-container">
-                <img src="../../images/StockProgramming.jpg" class="article-image" />
-              </div>
-              <div class="article-data">
-                <h2 class="article-title">
-                  Stoubord&#39;s Picks: Video RSS Directory
-                </h2>
-                <p class="article-excerpt">
-                  
-                </p>
-                <div class="article-metadata">
-                  April 8, 2021 • 2 min read
-                </div>
-              </div>
-            </div>
-          </a>
-        
-        
-        
-          </div>
-            
-            
-              
-            
-        
-    
     </div>
-  </section>
 </section>
 
+
+    <aside id="progressBar" class="aside-container">
+    <div class="aside-align">
+      <div>
+        <div class="overlap-container">
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-container" tabIndex={-1}>
+        <div class="track-line" aria-hidden="true">
+            <div id="progressIndicator" class="progress-line"></div>
+        </div>
+    </div>
+</aside>
+
+
+    <article  id="articleContent" class="post-content" style="position:relative;">
+        <p>Amazon Web Service&rsquo;s <code>S3 Buckets</code> are my preferred method for inserting images into content that might go into things like email signatures. While a free service like Dropbox could be used instead, images don&rsquo;t always reliably show when composing new emails. That can leave people within an organization confused about whether their signatures will appear correctly on the receiving end, and they may spend unnecessary time asking IT departments whether their signatures are working as intended or testing it themselves. While image hosting is something that we can gladly help you with, some people prefer that their internal departments handle any troubleshooting involved in hosting images. This guide is for those who prefer to keep things in-house. Make sure to keep all content for your signature project grouped within this bucket rather than across other hosting options to keep troubleshooting simple.</p>
+<h3 id="search-for-s3-in-the-aws-search-bar">Search for S3 in the AWS search bar</h3>
+<p>The very first step is to have an AWS account, and then to find S3 among all of the other services that AWS provides. The easiest way to find it is through the search bar at the top of the user console. Search S3 and it will appear under &lsquo;services&rsquo;.</p>
+<p><img src="/images/s3-tutorial/S3-Step1.PNG" alt="S3-Step1.PNG"></p>
+<h3 id="create-a-new-bucket">Create a new bucket</h3>
+<p>Simple as shown in the image below:</p>
+<p><img src="/images/s3-tutorial/S3-Step2.PNG" alt="S3-Step2.PNG"></p>
+<h3 id="name-the-bucket-and-set-permissions">Name the bucket and set permissions</h3>
+<p>Buckets should either combine all words with no spaces, or for readability only use hypens &lsquo;<code>-</code>&rsquo; between words. Next ensure that ACL&rsquo;s are enabled, and uncheck the option to &lsquo;block all public access&rsquo; as we specifically want anyone to be able to view them. That will open a warning box that we want to check that acknowledges that we understand &rsquo;these objects might become public&rsquo;. All other options in this step are selected by default, so they have not been highlighted in this tutorial.</p>
+<p><img src="/images/s3-tutorial/S3-Step3-1.PNG" alt="S3-Step3-1.PNG">
+<img src="/images/s3-tutorial/S3-Step3-2.PNG" alt="S3-Step3-2.PNG">
+<img src="/images/s3-tutorial/S3-Step3-3.PNG" alt="S3-Step3-3.PNG"></p>
+<h3 id="with-the-new-bucket-created-click-to-upload-files">With the new bucket created, click to upload files</h3>
+<p>Our next step is to click the button to upload files to our new bucket.</p>
+<p><img src="/images/s3-tutorial/S3-Step4.PNG" alt="S3-Step4.PNG"></p>
+<h3 id="drag-and-drop-or-create-new-folders-and-upload-files-via-window">Drag and drop, or create new folders and upload files via window</h3>
+<p>Organize the files as you wish as you may want to differentiate between content like social media icons, logos, and employee photos. Because we don&rsquo;t have many files in this example, we&rsquo;ve opted to put all content into the main bucket folder. Make sure to set ACL permissions at this point to choose predefined ACL&rsquo;s, select public-read access, and check the disclaimer acknowledging that anyone can view these files (including the customers we send signatures to). Click &lsquo;upload&rsquo; to start the process.</p>
+<p><img src="/images/s3-tutorial/S3-Step5-1.PNG" alt="S3-Step5-1.PNG">
+<img src="/images/s3-tutorial/S3-Step5-2.PNG" alt="S3-Step5-2.PNG"></p>
+<h3 id="with-new-files-uploaded-click-one-to-find-its-location">With new files uploaded, click one to find its location</h3>
+<p>Our two green rectangles show the link to our bucket repo where the files are now contained as well as links to all of the files we just uploaded. Click an image to see information about where it&rsquo;s stored, or click the repo link to set permissions to public if you forgot to in the last step.</p>
+<p><img src="/images/s3-tutorial/S3-Step6.PNG" alt="S3-Step6.PNG"></p>
+<h3 id="click-actions-in-the-bucket-repo-if-you-forgot-to-make-these-images-public">Click actions in the bucket repo if you forgot to make these images public</h3>
+<p>select all the images that need to be made public and then click the &lsquo;actions&rsquo; button in the window. Towards the bottom of the drop-down you&rsquo;ll see the option to make the files public.</p>
+<p><img src="/images/s3-tutorial/S3-Step7.PNG" alt="S3-Step7.PNG"></p>
+<h3 id="the-object-url-what-you-use-when-embedding-images">The Object URL what you use when embedding images</h3>
+<p>Once you click on a file within the S3 bucket you&rsquo;ll be brought to a page with informations about the file itself. The important information needed for our purposes is the &lsquo;Object URL&rsquo;. If you click on that link you&rsquo;ll view the uploaded file/image and see that the URL matches what was given on the AWS Object page.</p>
+<p><img src="/images/s3-tutorial/S3-Step8.PNG" alt="S3-Step8.PNG"></p>
+<p>You don&rsquo;t neccessarily need to click every file that you&rsquo;ve uploaded to get the URL for that image. If you know what the image name is you can just replace the part of the image link that contains the filename, and you&rsquo;ll get the filename you&rsquo;re looking for.</p>
+<p>Example:</p>
+<pre tabindex="0"><code>https://s3tutorial-bucket.s3.us-west-2.amazonaws.com/S3-Step1.PNG
+</code></pre><p>Change <a href="https://s3tutorial-bucket.s3.us-west-2.amazonaws.com/S3-Step1.PNG">this link</a> to say &lsquo;Step2.PNG&rsquo; at the end instead and you&rsquo;ll see the photo changes to reflect step 2 of this tutorial. Keep in mind that if you have different folders within your bucket that will change how the files are represented in the URL itself, but the structure will be similar and include the folder name before the filename.</p>
+<p>You can view larger versions of the images included in this tutorial by right clicking the image and selecting &lsquo;inspect&rsquo;. Then click the &lsquo;src&rsquo; attribute link for the <code>&lt;img&gt;</code> tag that gets highlighted in your browser, and it will open the image in its own browser tab. Please feel free to contact me if you need assistance in your project.</p>
+
+    </article>
+
+    <section class="article-cta">
+    <div class="article-cta__photo-container">
+        <img class="article-cta__photo-container__photo" src="../../images/stouffer.jpg"/>
+    </div>
+    <div class="article-cta__message">
+        <span class="article-cta__message__span">
+            Alex Stouffer-DeBord guides financial advisors through the process of creating effective brand messaging and web-tools built to sell that message effectively. Let's take your mastery of the financial world and integrate it into the metaverse.
+        </span>
+        <div class="article-cta__message__button-container">
+            <a class="cta-btn" href="https://squareup.com/appointments/book/as3u6kbu0irf0k/F4SJ6RB5Y7E9B/start">Book Appointment</a>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+
+    
+    
+    
+        
+    
+
+
+
+
+<section id="articleNext" class="section nartrow">
+    <h3 class="footer-next-heading">More articles from Alex Stouffer-DeBord</h3>
+    <div class="footer-spacer"></div>
+    <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
+        <div class="post-row">
+            
+                <a href="/post/migrate-cpt-from-wordpress-to-nextjs/" class="article-link"
+                 id="article-link-bigger">
+                    <div>
+                        <div class="image-container">
+                            <img src="../../images/birds-migrate.jpg" class="article-image" />
+                        </div>
+                        <div>
+                            <h2 class="article-title">
+                                Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting
+                            </h2>
+                            <p class="article-excerpt">
+                                
+                            </p>
+                            <div class="article-metadata">
+                                June 14, 2022 · 4 min read
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="/post/leverage-wordpress-nextjs/" class="article-link"
+                >
+                    <div>
+                        <div class="image-container">
+                            <img src="../../images/NextVsWordpress.jpg" class="article-image" />
+                        </div>
+                        <div>
+                            <h2 class="article-title">
+                                Why You Should Integrate WordPress with Next.js
+                            </h2>
+                            <p class="article-excerpt">
+                                
+                            </p>
+                            <div class="article-metadata">
+                                June 13, 2022 · 3 min read
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+ <script src="/js/progressBar.js"></script>
 
         
         <div class="footer-gradient"></div>
