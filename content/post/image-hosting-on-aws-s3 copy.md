@@ -1,6 +1,6 @@
 ---
 title: "Installing Email Signatures Across Different Operating Systems and Clients"
-date: 2022-08-08T19:14:07-08:00
+date: 2022-08-16T19:14:07-08:00
 hero: ../../images/showtime.png
 draft: false
 authors:
@@ -11,7 +11,7 @@ The time has come, and we're at the final step: installing your new professional
 - [How to install on Windows](https://lazyadmin.nl/office-365/outlook-html-signature/)
 - [How to install on Mac](https://www.thecreativenoise.com/resources/install-email-signature-outlook-mac-2016)
 
-For information on installing to Gmail, please view this [video](https://youtu.be/wk3-y7fVRKU)
+For information on installing to Gmail, please view this [video](https://youtu.be/wk3-y7fVRKU).
 
 ### Frequently Asked Questions
 
@@ -22,7 +22,7 @@ When installing your email signature, make sure that you have the settings selec
 Yes it does. It's preferred that you use the Outlook App rather than their online email service. There can be weird side effects depending on the style of your signature, and Microsoft doesn't keep their rendering consistent across the app and online service. Services like outlook.live, Yahoo Mail, and AOL Online all use compilers that will discard even the limited styles that are allowed in creating well-designed email signatures. There's no way to design around them.
 
 **What about using gmail's online email client? Does the previous rule still apply?**
-Gmail is primarily used as a web client service and the email signature will appear as well as it would on Outlook's desktop app. It is the exception to the rule. You can copy open your .html file, press `CTRL+A` or `CMD+A` to select all and then paste it into their email signature field before saving. Avoid using your mouse to copy as you may have missed important style information in the signature that will cause it to appear differently than intended.
+Gmail is primarily used as a web client service and the email signature will appear as well as it would on Outlook's desktop app. It is the exception to the rule. You can copy open your .html file, press `CTRL+A` or `CMD+A` to select all and then paste it into their email signature field before saving. Avoid using your mouse to copy as you may have missed important style information in the signature that will cause it to appear differently than intended. Do not use Safari if installing on Mac, instead use Firefox or Chrome.
 
 **Will my signature appear across all of my devices or clients?**
 Not inherently. A signature is only stored locally on the device where it is installed. If you work for a company with an IT team that can sync your Outlook account across multiple computers and offices it is up to them to configure new machines that you login to so that it carries over your data including your email account, contacts, calendar, etc. This includes signatures. You may have to install the signature on each computer if this is unavailable. Similarly, a signature installed on a desktop email app will not appear in their online email service. Avoid using both and stick to the superior version of their product.

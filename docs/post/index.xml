@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>Installing Email Signatures Across Different Operating Systems and Clients</title>
-      <link>https://alexstouffer.github.io/post/image-hosting-on-aws-s3-copy/</link>
-      <pubDate>Mon, 08 Aug 2022 19:14:07 -0800</pubDate>
-      
-      <guid>https://alexstouffer.github.io/post/image-hosting-on-aws-s3-copy/</guid>
-      <description>The time has come, and we&amp;rsquo;re at the final step: installing your new professional email signature! Depending on which desktop operating system you&amp;rsquo;re using, you may have to follow different steps to get your new HTML email signature to appear consistently. Here&amp;rsquo;s a couple links on installing for Windows and Mac versions of Outlook respectively:
- How to install on Windows How to install on Mac  For information on installing to Gmail, please view this video</description>
-    </item>
-    
-    <item>
       <title>Migrating Custom Post Types From WordPress to Next.js using GraphQL and Vercel Hosting</title>
       <link>https://alexstouffer.github.io/post/migrate-cpt-from-wordpress-to-nextjs/</link>
       <pubDate>Tue, 14 Jun 2022 00:38:50 -0700</pubDate>
