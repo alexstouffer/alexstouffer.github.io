@@ -7,9 +7,11 @@ authors:
     - Alex Stouffer
 ---
 
-The time has come, and we're at the final step: installing your new professional email signature into your respective email client and operating system! Depending on which desktop operating system you're using, you may have to follow different steps to get your new HTML email signature to appear consistently. Here's a couple links on installing for Windows and Mac respectively:
+The time has come, and we're at the final step: installing your new professional email signature! Depending on which desktop operating system you're using, you may have to follow different steps to get your new HTML email signature to appear consistently. Here's a couple links on installing for Windows and Mac versions of Outlook respectively:
 - [How to install on Windows](https://lazyadmin.nl/office-365/outlook-html-signature/)
 - [How to install on Mac](https://www.thecreativenoise.com/resources/install-email-signature-outlook-mac-2016)
+
+For information on installing to Gmail, please view this [video](https://youtu.be/wk3-y7fVRKU)
 
 ### Frequently Asked Questions
 
