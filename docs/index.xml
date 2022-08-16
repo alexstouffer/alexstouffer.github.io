@@ -6,7 +6,17 @@
     <description>Recent content on Alex Stouffer-DeBord</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 19:14:07 -0800</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://alexstouffer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Email Signatures Across Different Operating Systems and Clients</title>
+      <link>https://alexstouffer.github.io/post/installing-email-signatures-and-faqs/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexstouffer.github.io/post/installing-email-signatures-and-faqs/</guid>
+      <description>The time has come, and we&amp;rsquo;re at the final step: installing your new professional email signature! Depending on which desktop operating system you&amp;rsquo;re using, you may have to follow different steps to get your new HTML email signature to appear consistently. Here&amp;rsquo;s a couple links on installing for Windows and Mac versions of Outlook respectively:
+ How to install on Windows How to install on Mac  For information on installing to Gmail, please view this video.</description>
+    </item>
+    
     <item>
       <title>How to Host Images on an AWS S3 Bucket</title>
       <link>https://alexstouffer.github.io/post/image-hosting-on-aws-s3/</link>

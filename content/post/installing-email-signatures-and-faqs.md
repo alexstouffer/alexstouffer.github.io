@@ -1,6 +1,6 @@
 ---
 title: "Installing Email Signatures Across Different Operating Systems and Clients"
-date: 2022-08-16T19:14:07-08:00
+date: 2022-08-16
 hero: ../../images/showtime.png
 draft: false
 authors:
