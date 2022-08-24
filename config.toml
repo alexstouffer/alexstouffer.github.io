@@ -2,6 +2,8 @@ baseURL = "https://alexstouffer.github.io/"
 languageCode = "en-us"
 title = "Alex Stouffer-DeBord"
 
+googleAnalytics = "G-TY2FXBGFVF"
+
 # Novela settings
 theme = "hugo-theme-novela-master"
 
