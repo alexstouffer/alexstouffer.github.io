@@ -7,28 +7,29 @@ authors:
     - Alex Stouffer
 ---
 
-The purpose of this article is chart out my competition and see if I can fit a niche that customers don't have filled as of yet. 
-## Key Factors to Evaluate
-1. Price
-2. Ownership
-3. Continued Development
-4. Extra Features
+I'm proud to announce that I've completed the Minimum Viable Product (MVP) for a new potential Software as a Service (SaaS) platform. My first client for this product are financial advisors who work with clients investing a minumum of $250K. Because these advisors market to wealthy clientele they required a clean email template that appeared consistently for their entire organization. This is specifically true for their outbound marketing and sales teams. 
 
-### High Priced
+Before I get too deep into developing an automated platform for similar clients I thought it would be wise to measure the competition and see what I have going for or against me. I'll share with you some key take-aways from my research into the industry and how I can serve you value from a new perspective. First, let's address why you would want a product like this. 
 
-### Moderately Priced
+An email signature is one key-component in the larger endevour to create sucessful email marketing campaigns. Companies like [HubSpot]() have set themselves apart as being the top-end option for providing a comprehensive set of tools to perform such a task, but with that comes a high price tag. Alternatively, you can use a very cheap service like [Signature.email]() that only covers email signatures with limitations on template designs.
 
-### Low Priced
+### Key Benefits
+- Distinct Brand Awareness
+- Turn your emails into a marketing channel
 
-### Popular HTML Signature Service Providers
-1. Rocketseed
-    - Price: $1 per user
-    - Ownership: Lease
-    - Purpose:
-    - Extra Features:
 
-**What about installing my HTML signature on my mobile device?**
-You will be able to see an HTML signature sent from a desktop in your mobile device, but you will not be able to use that HTML signature when writing emails on mobile. While you may be able to open an .html file, copy its contents, and paste it into a field where mobile signatures are written, the device will discard the inputed data without saving anything to the device. For more information please refer to this [Microsoft forum post reply](https://answers.microsoft.com/en-us/outlook_com/forum/all/mail-signature-html-in-outlook-on-ios/1ad2c226-1a85-47a8-b268-ed301a0a9e24#:~:text=Based%20on%20your%20description%2C%20currently,to%20a%20plain%20text%20format.) from January of 2022. This flaw also applies to the mobile version of the [gmail app](https://www.wisestamp.com/guides/gmail-html-signature/#:~:text=It's%20not%20possible%20to%20add,for%20inserting%20HTML%20nor%20images.). This is regardless of the device that's used. For best practices, send important marketing emails from laptops and desktops exclusively.
+### UTM Tagging
+
+### My Competitors Want You To Pay Rent For Your Signatures
+Most services I've come across have a common theme. They want you to pay annually for the right to use a signature that they've designed for you. You may have paid for the signature but you don't actually own it. You lease it from them. Their claim is that this is justified because of all of the Email Service Provider updates that happen throughout a year that could [potentially break]() or adjust how your signature appears. While that is a real problem potentially, imagine if someone told you that you needed to lease your phone, laptop, or computer for the same reason. Would you be inclined to believe them? People do pay leases for phones, but that's better as an option rather than a standard. I offer a service protection plan to cover your templates should breakage occure.
+
+### If Their Servers are Down, so is your Organizations' Signatures
+
+### Most Designs Are Basic To Avoid Dark Mode Side Effects
+
+### Customization is Limited By What Their Builder App Provides
+I'm not a fan of no-code solutions despite their popularity. That's probably not surprising to hear as I work with code by trade. However I have my reasons and the biggest one is that no-code solutions are always limited with what they can do, unless you're willing to go 'under the hood' and touch the code itself. Most no-code platforms I've worked with will either prevent you from doing certain things entirely or require that you learn an additional layer of their proprietary codebase in order to implement a non-standard feature using their products. This is why WIX websites are suitable for only the most basic 'brochure' style pages.
+
 
 ![mobile-sig-install-meme.jpg](/images/mobile-sig-install-meme.jpg)
 
